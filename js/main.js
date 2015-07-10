@@ -5,12 +5,12 @@ $('.navback').click(function(){
 });
 
 $(function(){
-$('.navitem').hover(function(){   
+    $('.navitem').hover(function(){   
         $(this).find('.navback').animate({"width":'100%'},250);
-        },function(){      
-         $(this).find('.navback').animate({"width":'0%'},250);
-    });
-return true;
+    },function(){      
+     $(this).find('.navback').animate({"width":'0%'},250);
+ });
+    return true;
 });
 
 
@@ -23,3 +23,5 @@ $(function(){
         $(this).animate({"margin-left":'-10%'},500);
     });
 });
+
+
