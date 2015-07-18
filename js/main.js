@@ -8,8 +8,8 @@ $(function(){
     $('.navitem').hover(function(){   
         $(this).find('.navback').animate({"width":'100%'},250);
     },function(){      
-     $(this).find('.navback').animate({"width":'0%'},250);
- });
+       $(this).find('.navback').animate({"width":'0%'},250);
+   });
     return true;
 });
 
