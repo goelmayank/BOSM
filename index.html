@@ -36,8 +36,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	// <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	// <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
 	<script src="js/jquery.timeTo.js"></script>
 	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
@@ -56,7 +54,7 @@
 		</div>
 	</div>
 	<div id="home" class= "cover">
-		<p><img src="./images/triangles.png" id="triangles"></p>
+		<p><img class="img-responsive" src="./images/triangles.png" id="triangles"></p>
 		<br>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -70,19 +68,19 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="images/home-slider/S (1).jpg" alt="Cricket">
+					<img class="img-responsive" src="images/home-slider/S (1).jpg" alt="Cricket">
 				</div>
 
 				<div class="item">
-					<img src="images/home-slider/S (1).jpg" alt="Football">
+					<img class="img-responsive" src="images/home-slider/S (1).jpg" alt="Football">
 				</div>
 
 				<div class="item">
-					<img src="images/home-slider/S (1).jpg" alt="Swimming">
+					<img class="img-responsive" src="images/home-slider/S (1).jpg" alt="Swimming">
 				</div>
 
 				<div class="item">
-					<img src="images/home-slider/S (1).jpg" alt="Athletics">
+					<img class="img-responsive" src="images/home-slider/S (1).jpg" alt="Athletics">
 				</div>
 			</div>
 
@@ -254,7 +252,58 @@
 	<div id="eventstitle">EVENTS</div>   
 	<div id="yodh" class= "cover"></div>
 	<div id="gallery" class= "cover"></div>
-	<div id="sponsors" class= "cover"></div>
+	<div id="sponsors" class= "cover">
+		<div class="col-md-3 col-xs-1"></div>
+		<div class="col-md-6 col-xs-10">
+			<div data-spy="scroll" data-target=".navbar" data-offset="12" class="spons">
+				<div class="row">
+					<div class="col-md-2 col-xs-1"></div>
+					<div class="col-md-8 col-xs-10">
+						<h2>Silver Sponsor</h2>
+						<a href="http://www.heromotocorp.com/" target="_blank">
+							<img class="img-responsive" src="http://bits-bosm.org/2014/site_media/sponsors/Hero_Logo.jpg" style="height: 40vh;">
+						</a>
+						<br>
+					</div>
+					<div class="col-md-2 col-xs-1"></div>
+				</div>  
+				<div class="row">
+					<div class="col-md-2 col-xs-1"></div>
+					<div class="col-md-8 col-xs-10">
+						<h2>Silver Sponsor</h2>
+						<a href="http://www.heromotocorp.com/" target="_blank">
+							<img class="img-responsive" src="http://bits-bosm.org/2014/site_media/sponsors/Hero_Logo.jpg" style="height: 40vh;">
+						</a>
+						<br>
+					</div>
+					<div class="col-md-2 col-xs-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-xs-1"></div>
+					<div class="col-md-8 col-xs-10">
+						<h2>Silver Sponsor</h2>
+						<a href="http://www.heromotocorp.com/" target="_blank">
+							<img class="img-responsive" src="http://bits-bosm.org/2014/site_media/sponsors/Hero_Logo.jpg" style="height: 40vh;">
+						</a>
+						<br>
+					</div>
+					<div class="col-md-2 col-xs-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-xs-1"></div>
+					<div class="col-md-8 col-xs-10">
+						<h2>Silver Sponsor</h2>
+						<a href="http://www.heromotocorp.com/" target="_blank">
+							<img class="img-responsive" src="http://bits-bosm.org/2014/site_media/sponsors/Hero_Logo.jpg" style="height: 40vh;">
+						</a>
+						<br>
+					</div>
+					<div class="col-md-2 col-xs-1"></div>
+				</div>
+			</div>
+			<div class="col-md-3 col-xs-1"></div>
+		</div>
+	</div>
 	<div id="blog" class= "cover"></div>
 	<div id="contacts" class= "cover"></div>
 
@@ -283,8 +332,8 @@
 		$(document).ready(function () {
 			// $(".boxes").one('click', function() {
 
-			var myEvent = $('.boxes').bind('click.myEvent', function() {
-				$(this).unbind('click.myEvent');
+				var myEvent = $('.boxes').bind('click.myEvent', function() {
+					$(this).unbind('click.myEvent');
 
 			// $(".boxes").click(function () {
 			// 	$(this).unbind('click');
@@ -300,16 +349,16 @@
 				$("#pop" + id).fadeIn(300);
 				positionPopup();
 			});
-			
+
 
 			// $(".pop > span").click(function () { ... not working but required
  			// $(".pop").click(function () {  ..working
-			$(".pop > span, .pop").click(function () {
-				$(".pop").fadeOut(300);
+ 				$(".pop > span, .pop").click(function () {
+ 					$(".pop").fadeOut(300);
 				// $('.boxes').bind('event',myEvent);
 				$('.boxes').bind('click.myEvent');
 			});
-		});
+ 			});
 	</script>
 
 	<script type="text/javascript">      
