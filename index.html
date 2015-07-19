@@ -36,9 +36,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+	// <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	// <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
 	<script src="js/jquery.timeTo.js"></script>
 	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
+	// <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Play:400,700' rel='stylesheet' type='text/css'>
@@ -48,22 +51,14 @@
 <body>
 
 	<div id="landing" class= "cover">
-		<div id="logo">
-			<div id="cssSlider">
-				<div id="sliderImages">
-					<img id="si_1" src="http://f.cybrox.eu/codepen/slider/slide1.jpg" alt="" />
-					<img id="si_2" src="http://f.cybrox.eu/codepen/slider/slide2.jpg" alt="" />
-					<img id="si_3" src="http://f.cybrox.eu/codepen/slider/slide3.jpg" alt="" />
-					<img id="si_4" src="http://f.cybrox.eu/codepen/slider/slide4.jpg" alt="" />
-					<img id="si_5" src="http://f.cybrox.eu/codepen/slider/slide5.jpg" alt="" />
-					<div style="clear:left;"></div>
-				</div>
-			</div>
-
+		<div class='slider'>
+			<div class='slide1'></div>
+			<div class='slide2'></div>
+			<div class='slide3'></div>
 		</div>
 	</div>
 	<div id="home" class= "cover">
-		<p><img class="img-responsive" src="./images/triangles.png" id="triangles"></p>
+		<p><img src="./images/triangles.png" id="triangles"></p>
 		<br>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -77,19 +72,19 @@
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img class="img-responsive" src="images/home-slider/1.jpg" alt="Cricket">
+					<img src="images/S (1).jpg" alt="Cricket">
 				</div>
 
 				<div class="item">
-					<img class="img-responsive" src="images/home-slider/2.jpg" alt="Football">
+					<img src="images/S (1).jpg" alt="Football">
 				</div>
 
 				<div class="item">
-					<img class="img-responsive" src="images/home-slider/3.jpg" alt="Swimming">
+					<img src="images/S (1).jpg" alt="Swimming">
 				</div>
 
 				<div class="item">
-					<img class="img-responsive" src="images/home-slider/4.jpg" alt="Athletics">
+					<img src="images/S (1).jpg" alt="Athletics">
 				</div>
 			</div>
 
@@ -107,162 +102,197 @@
 	<div id="events" class="cover">
 
 		<div id="badabox">
-			<div onmouseover="funcslidei(bx1, panel1)" class="boxes" id = "bx1">
+			<div onmouseover="funcslidei(bx1, panel1)" onmouseout="funcslidef(bx1, panel1)" class="boxes" id = "bx1">
+				<img src="bosm events/1.svg" id="e1" class="evpic">
 				<div class="pop" id="pop1">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx1, panel1)" id="panel1">1</div>
+				<div id="panel1">1</div>
 			</div>
-			<div onmouseover="funcslidei(bx2, panel2)" class="boxes" id = "bx2">
+			<div onmouseover="funcslidei(bx2, panel2)" onmouseout="funcslidef(bx2, panel2)" class="boxes" id = "bx2">
+				<img src="bosm events/2.svg" id="e2" class="evpic">
 				<div class="pop" id="pop2">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx2, panel2)" id="panel2">2</div>
+				<div id="panel2">2</div>
 			</div>
-			<div onmouseover="funcslidei(bx3, panel3)" class="boxes" id = "bx3">
+			<div onmouseover="funcslidei(bx3, panel3)" onmouseout="funcslidef(bx3, panel3)" class="boxes" id = "bx3">
+				<img src="bosm events/3.svg" id="e3" class="evpic">
 				<div class="pop" id="pop3">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx3, panel3)" id="panel3">3</div>
+				<div id="panel3">3</div>
 			</div>
-			<div onmouseover="funcslidei(bx4, panel4)" class="boxes" id = "bx4">
+			<div onmouseover="funcslidei(bx4, panel4)" onmouseout="funcslidef(bx4, panel4)" class="boxes" id = "bx4">
+				<img src="bosm events/4.svg" id="e4" class="evpic">
 				<div class="pop" id="pop4">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx4, panel4)" id="panel4">4</div>
+				<div id="panel4">4</div>
 			</div>
-			<div onmouseover="funcslidei(bx5, panel5)" class="boxes" id = "bx5">
+			<div onmouseover="funcslidei(bx5, panel5)" onmouseout="funcslidef(bx5, panel5)" class="boxes" id = "bx5">
+				<img src="bosm events/5.svg" id="e5" class="evpic">
 				<div class="pop" id="pop5">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx5, panel5)" id="panel5">5</div>
+				<div id="panel5">5</div>
 			</div>
-			<div onmouseover="funcslidei(bx6, panel6)" class="boxes" id = "bx6">
+			<div onmouseover="funcslidei(bx6, panel6)" onmouseout="funcslidef(bx6, panel6)" class="boxes" id = "bx6">
+				<img src="bosm events/6.svg" id="e6" class="evpic">
 				<div class="pop" id="pop6">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx6, panel6)" id="panel6">6</div>
+				<div id="panel6">6</div>
 			</div>
-			<div onmouseover="funcslidei(bx7, panel7)" class="boxes" id = "bx7">
+			<div onmouseover="funcslidei(bx7, panel7)" onmouseout="funcslidef(bx7, panel7)" class="boxes" id = "bx7">
+				<img src="bosm events/7.svg" id="e7" class="evpic">
 				<div class="pop" id="pop7">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx7, panel7)" id="panel7">7</div>
+				<div id="panel7">7</div>
 			</div>
-			<div onmouseover="funcslidei(bx8, panel8)" class="boxes" id = "bx8">
+			<div onmouseover="funcslidei(bx8, panel8)" onmouseout="funcslidef(bx8, panel8)" class="boxes" id = "bx8">
+				<img src="bosm events/8.svg" id="e8" class="evpic">
 				<div class="pop" id="pop8">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx8, panel8)" id="panel8">8</div>
+				<div id="panel8">8</div>
 			</div>
-			<div onmouseover="funcslidei(bx9, panel9)" class="boxes" id = "bx9">
+			<div onmouseover="funcslidei(bx9, panel9)" onmouseout="funcslidef(bx9, panel9)" class="boxes" id = "bx9">
+				<img src="bosm events/9.svg" id="e9" class="evpic">
 				<div class="pop" id="pop9">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx9, panel9)" id="panel9">9</div>
+				<div id="panel9">9</div>
 			</div>
-			<div onmouseover="funcslidei(bx10, panel10)" class="boxes" id = "bx10">
+			<div onmouseover="funcslidei(bx10, panel10)" onmouseout="funcslidef(bx10, panel10)" class="boxes" id = "bx10">
+				<img src="bosm events/10.svg" id="e10" class="evpic">
 				<div class="pop" id="pop10">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx10, panel10)" id="panel10">10</div>
+				<div id="panel10">10</div>
 			</div>
-			<div onmouseover="funcslidei(bx11, panel11)" class="boxes" id = "bx11">
+			<div onmouseover="funcslidei(bx11, panel11)" onmouseout="funcslidef(bx11, panel11)" class="boxes" id = "bx11">
+				<img src="bosm events/11.svg" id="e11" class="evpic">
 				<div class="pop" id="pop11">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx11, panel11)" id="panel11">11</div>
+				<div id="panel11">11</div>
 			</div>
-			<div onmouseover="funcslidei(bx12, panel12)" class="boxes" id = "bx12">
+			<div onmouseover="funcslidei(bx12, panel12)" onmouseout="funcslidef(bx12, panel12)" class="boxes" id = "bx12">
+				<img src="bosm events/12.svg" id="e12" class="evpic">
 				<div class="pop" id="pop12">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx12, panel12)" id="panel12">12</div>
+				<div id="panel12">12</div>
 			</div>
-			<div onmouseover="funcslidei(bx13, panel13)" class="boxes" id = "bx13">
+			<div onmouseover="funcslidei(bx13, panel13)" onmouseout="funcslidef(bx13, panel13)" class="boxes" id = "bx13">
+				<img src="bosm events/13.svg" id="e13" class="evpic">
 				<div class="pop" id="pop13">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx13, panel13)" id="panel13">13</div>
+				<div id="panel13">13</div>
 			</div>
-			<div onmouseover="funcslidei(bx14, panel14)" class="boxes" id = "bx14">
+			<div onmouseover="funcslidei(bx14, panel14)" onmouseout="funcslidef(bx14, panel14)" class="boxes" id = "bx14">
+				<img src="bosm events/14.svg" id="e14" class="evpic">
 				<div class="pop" id="pop14">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx14, panel14)" id="panel14">14</div>
+				<div id="panel14">14</div>
 			</div>
-			<div onmouseover="funcslidei(bx15, panel15)" class="boxes" id = "bx15">
+			<div onmouseover="funcslidei(bx15, panel15)" onmouseout="funcslidef(bx15, panel15)" class="boxes" id = "bx15">
+				<img src="bosm events/15.svg" id="e15" class="evpic">
 				<div class="pop" id="pop15">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx15, panel15)" id="panel15">15</div>
+				<div id="panel15">15</div>
 			</div>
-			<div onmouseover="funcslidei(bx16, panel16)" class="boxes" id = "bx16">
+			<div onmouseover="funcslidei(bx16, panel16)" onmouseout="funcslidef(bx16, panel16)" class="boxes" id = "bx16">
+				<img src="bosm events/16.svg" id="e16" class="evpic">
 				<div class="pop" id="pop16">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx16, panel16)" id="panel16">16</div>
+				<div id="panel16">16</div>
 			</div>
-			<div onmouseover="funcslidei(bx17, panel17)" class="boxes" id = "bx17">
+			<div onmouseover="funcslidei(bx17, panel17)" onmouseout="funcslidef(bx17, panel17)" class="boxes" id = "bx17">
+				<img src="bosm events/17.svg" id="e17" class="evpic">
 				<div class="pop" id="pop17">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx17, panel17)" id="panel17">17</div>
+				<div id="panel17">17</div>
 			</div>
-			<div onmouseover="funcslidei(bx18, panel18)" class="boxes" id = "bx18">
+			<div onmouseover="funcslidei(bx18, panel18)" onmouseout="funcslidef(bx18, panel18)" class="boxes" id = "bx18">
+				<img src="bosm events/18.svg" id="e18" class="evpic">
 				<div class="pop" id="pop18">
 					<span>✖</span>
 					<h1>jQuery Pop Up</h1>
 					<p>This is a random pop up, hopefully its not annoying.</p>
 				</div>
-				<div onmouseout="funcslidef(bx18, panel18)" id="panel18">18</div>
+				<div id="panel18">18</div>
 			</div>
-		</div> 
-		<div id="overlay"></div>
-		<div id="ltboxl"></div>
-		<div id="ltboxb"></div>
-		<div id="ltboxr"></div>
-		<div id="ltboxt"></div>      
+			<div id="rightarr">right</div>
+			<div id="leftarr">left</div>
+
+		</div>
+		<div id="eoverlay"></div>
+		<div id="eexit">E</div>          
 	</div> 
 	<div id="eventstitle">EVENTS</div>   
 	<div id="yodh" class= "cover"></div>
-	<div id="gallery" class= "cover"></div>
+	<div id="gallery" class= "cover">
+		<div id="gbadabox">
+			<div id="g1" class="frames fupper" style="background-image:url(images/4.jpg); background-size:140% 100%;" onclick="gpopup(1)"></div>                            
+			<div id="g2" class="frames fupper" style="background-image:url(images/7.jpg); background-size:140% 100%;" onclick="gpopup(2)"></div>
+			<div id="g3" class="frames fupper" style="background-image:url(images/4.jpg); background-size:140% 100%;" onclick="gpopup(3)"></div>
+			<div id="g4" class="frames fupper" style="background-image:url(images/5.jpg); background-size:140% 100%;" onclick="gpopup(4)"></div>
+			<div id="g5" class="frames flower" style="background-image:url(images/10.jpg); background-size:140% 100%;" onclick="gpopup(5)"></div>
+			<div id="g6" class="frames flower" style="background-image:url(images/11.jpg); background-size:140% 100%;" onclick="gpopup(6)"></div>
+			<div id="g7" class="frames flower" style="background-image:url(images/12.jpg); background-size:140% 100%;" onclick="gpopup(7)"></div>
+			<div id="g8" class="frames flower" style="background-image:url(images/13.jpg); background-size:140% 100%;" onclick="gpopup(8)"></div>
+		</div>
+		<div id="goverlay"></div>
+		<div id="bigpiccont"><img id="bigpic" src=""></div>
+		<span id="gexit">X</span>
+		<span id="next">Nx</span>
+		<span id="previous">Pr</span>
+
+	</div>
 	<div id="sponsors" class= "cover">
-		<br>
+		<div id="sponstitle">SPONSORS</div>
 		<div class="container">
 			<div id="spons" class="carousel slide" data-ride="carousel">
 				<!-- Indicators -->
@@ -278,7 +308,7 @@
 					<div class="item active">
 						<div class="col-md-6">
 							<a class="hover-img curved" href="#">
-								<img class="img-responsive" src="images/home-slider/1.jpg" alt="Image Alternative text" title="the journey home" />
+								<img class="img-responsive" src="images/1.jpg" alt="Image Alternative text" title="the journey home" />
 								<!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
 							</a>
 
@@ -292,7 +322,7 @@
 					<div class="item">
 						<div class="col-md-6">
 							<a class="hover-img curved" href="#">
-								<img class="img-responsive" src="images/home-slider/2.jpg" alt="Image Alternative text" title="Upper Lake in New York Central Park" />
+								<img class="img-responsive" src="images/2.jpg" alt="Image Alternative text" title="Upper Lake in New York Central Park" />
 								<!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
 							</a>
 						</div>
@@ -305,7 +335,7 @@
 					<div class="item">
 						<div class="col-md-6">
 							<a class="hover-img curved" href="#">
-								<img class="img-responsive" src="images/home-slider/3.jpg" alt="Image Alternative text" title="people on the beach" /><!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
+								<img class="img-responsive" src="images/3.jpg" alt="Image Alternative text" title="people on the beach" /><!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
 							</a>
 						</div>
 						<div class="col-md-6">
@@ -317,7 +347,7 @@
 					<div class="item">
 						<div class="col-md-6">
 							<a class="hover-img curved" href="#">
-								<img class="img-responsive" src="images/home-slider/4.jpg" alt="Image Alternative text" title="lack of blue depresses me" /><!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
+								<img class="img-responsive" src="images/4.jpg" alt="Image Alternative text" title="lack of blue depresses me" /><!-- <i class="fa fa-plus box-icon-white box-icon-border hover-icon-top-right round"></i> -->
 							</a>
 						</div>
 						<div class="col-md-6">
@@ -341,9 +371,6 @@
 
 	</div>
 
-	
-</div>
-</div>
 </div>
 <div id="blog" class= "cover"></div>
 <div id="contacts" class= "cover"></div>
@@ -360,52 +387,82 @@
 
 
 <div id="checkpos"></div>
+<!-- **********************************************Assigning id to gallery images to use as variables in script****************************************-->
+<img id="gimg1" src="images/4.jpg" style="display:none">
+<img id="gimg2" src="images/7.jpg" style="display:none">
+<img id="gimg3" src="images/4.jpg" style="display:none">
+<img id="gimg4" src="images/5.jpg" style="display:none">
+<img id="gimg5" src="images/10.jpg" style="display:none">
+<img id="gimg6" src="images/11.jpg" style="display:none">
+<img id="gimg7" src="images/12.jpg" style="display:none">
+<img id="gimg8" src="images/13.jpg" style="display:none">
 
-<div></div>
-<div></div>
-
+<!--***************************************************************************************************************************************************-->
 
 
 <script type="text/javascript" src="js/main.js">
 </script>
 
 <script type="text/javascript">
-	$(document).ready(function () {
-			// $(".boxes").one('click', function() {
+	var cw = $('.frames').width();
+	$('.frames').css({'height':cw+'px'});
 
-				var myEvent = $('.boxes').bind('click.myEvent', function() {
-					$(this).unbind('click.myEvent');
+	var ch = $('.frames').height();
+	var kk = ch + 12;
+	$('.flower').css({'top':kk + 'px'});
 
-			// $(".boxes").click(function () {
-			// 	$(this).unbind('click');
+	$('#gbadabox').css({'height':kk + kk +'px'});
 
-				// $(this).bind('click');
-				// $(this).off('click');
-				// $(this).on('click');
-				// $(this).stopImmediatePropagation();
-				// $(this).stopPropagation();
-				// $(this).preventDefault();
-				var id = this.id;
-				id = id.substring(2);
-				$("#pop" + id).fadeIn(300);
-				positionPopup();
-			});
-
-
-			// $(".pop > span").click(function () { ... not working but required
- 			// $(".pop").click(function () {  ..working
- 				$(".pop > span, .pop").click(function () {
- 					$(".pop").fadeOut(300);
-				// $('.boxes').bind('event',myEvent);
-				$('.boxes').bind('click.myEvent');
-			});
- 			});
 </script>
-
+<script type="text/javascript">
+	$(".boxes").click(function()
+	{
+		$("#eoverlay").fadeIn(500);
+		$("#eexit").fadeIn(500);
+	});
+</script>
 <script type="text/javascript">      
 
-	var height = $(".boxes").height() - 10;
-	var width = $(".boxes").width() - 10; 
+	var height = $(".boxes").height() - 20;
+	var width = $(".boxes").width() - 20; 
+
+	function funcslidef(element1, element2)
+	{  
+		var x = event.clientX;
+		var y = event.clientY;
+
+		var m = $(element1);
+		var o = $(element2).attr('id');
+		var n = m.position();
+		var eTop = $("#badabox").offset().top;
+		var eLeft = $("#badabox").offset().left;
+		var tt = eTop - $(window).scrollTop();
+		var tl = eLeft - $(window).scrollLeft();
+
+		a = n.top + 20 + tt;
+		b = n.left + 20 + tl;
+		c = n.left + width + tl;
+		d = n.top + height + tt;
+
+		if(y>d)
+		{
+			document.getElementById(o).className = "slideftb";
+		}
+		else if(x>c)
+		{
+			document.getElementById(o).className = "slideflr";
+		}
+		else if(y<a)
+		{
+			document.getElementById(o).className = "slidefbt";
+		}
+		else if(x<b)
+		{
+			document.getElementById(o).className = "slidefrl";
+		}
+
+	};
+
 
 	function funcslidei(element1, element2)
 	{  
@@ -420,65 +477,121 @@
 		var tt = eTop - $(window).scrollTop();
 		var tl = eLeft - $(window).scrollLeft();
 
-		u = q.top + 10 + tt;
-		v = q.left + 10 + tl;
+		u = q.top + 20 + tt;
+		v = q.left + 20 + tl;
 		r = q.left + width + tl;
 		s = q.top + height + tt;
 
-		if(y>0 && y<u)
+		if(y<u)
 		{
 			document.getElementById(o).className = "slideitb";
 		}
-		if(x>0 && x<v)
+		else if(x<v)
 		{
 			document.getElementById(o).className = "slideilr";
 		}
-		if(y>s)
+		else if(y>s)
 		{
 			document.getElementById(o).className = "slideibt";
 		}
-		if(x>r)
+		else if(x>r)
 		{
 			document.getElementById(o).className = "slideirl";
 		}
 	};
 
-	function funcslidef(element1, element2)
-	{  
-		var x = event.clientX;
-		var y = event.clientY;
-
-		var m = $(element1);
-		var o = $(element2).attr('id');
-		var n = m.position();
-		var eTop = $("#badabox").offset().top;
-		var eLeft = $("#badabox").offset().left;
-		var tt = eTop - $(window).scrollTop();
-		var tl = eLeft - $(window).scrollLeft();
-		a = n.top + 10 + tt;
-		b = n.left + 10 + tl;
-		c = n.left + width + tl;
-		d = n.top + height + tt;
-
-
-		if(y>d)
-		{
-			document.getElementById(o).className = "slideftb";
-		}
-		if(x>c)
-		{
-			document.getElementById(o).className = "slideflr";
-		}
-		if(y<a)
-		{
-			document.getElementById(o).className = "slidefbt";
-		}
-		if(x<b)
-		{
-			document.getElementById(o).className = "slidefrl";
-		}
-	};
 
 </script>
+
+<script type="text/javascript">
+	var x=0;
+	var a =  document.getElementById("gimg1").src;
+	var b =  document.getElementById("gimg2").src;
+	var c =  document.getElementById("gimg3").src;
+	var d =  document.getElementById("gimg4").src;
+	var e =  document.getElementById("gimg5").src;
+	var f =  document.getElementById("gimg6").src;
+	var g =  document.getElementById("gimg7").src;
+	var h =  document.getElementById("gimg8").src;
+	function gpopup(y)
+	{
+		x=y;
+
+
+		if(x==1)
+		{         
+			document.getElementById("bigpic").src= a;
+		}
+		if(x==2)
+		{        
+			document.getElementById("bigpic").src= b;        
+		}
+		if(x==3)
+		{         
+			document.getElementById("bigpic").src= c;        
+		}
+		if(x==4)
+		{         
+			document.getElementById("bigpic").src= d;        
+		}
+		if(x==5)
+		{         
+			document.getElementById("bigpic").src= e;        
+		}
+		if(x==6)
+		{         
+			document.getElementById("bigpic").src= f;
+		}
+		if(x==7)
+		{         
+			document.getElementById("bigpic").src= g;        
+		}
+		if(x==8)
+		{         
+			document.getElementById("bigpic").src= h;        
+		}
+		$("#goverlay").fadeIn(500);
+		$("#bigpiccont").fadeIn(500);
+		$("#previous").fadeIn(500);
+		$("#next").fadeIn(500);
+		$("#gexit").fadeIn(500);
+	};
+
+	$("#next").click(function(){
+		if(x<8){x++;}
+		gpopup(x);
+	}
+	);
+	$("#previous").click(function(){
+		if(x>1){x--};
+		gpopup(x);
+	}
+	);
+	$("#gexit").click(function(){
+		document.getElementById("goverlay").style.display= "none"; 
+		document.getElementById("bigpiccont").style.display= "none"; 
+		document.getElementById("gexit").style.display= "none"; 
+		document.getElementById("next").style.display= "none";
+		document.getElementById("previous").style.display= "none";
+	}
+	);
+	$("#eexit").click(function(){
+		document.getElementById("eoverlay").style.display= "none"; 
+		document.getElementById("eexit").style.display= "none"; 
+	}
+	);
+</script>
+<script type="text/javascript">
+	$("#rightarr").click(function()
+	{
+		$("#badabox").animate({left: "-100%"}, 500, "swing");     
+
+	});
+	$("#leftarr").click(function()
+	{
+		$("#badabox").animate({left: "0%"}, 500, "swing");      
+	});
+</script>
+
 </body>
 </html>

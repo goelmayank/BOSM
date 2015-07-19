@@ -1,0 +1,2 @@
+>>This are not the final colours. However you can change them according to need using css as given images are svg.
+>>Because of the poor and irregular quality of pngs used last year the trace can not be accurate and with the given time contrain it is not possible to redraw 18 cliparts. So please dont blow up the picture size quality is not desirable.

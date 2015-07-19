@@ -16,10 +16,10 @@ $(function(){
 
 $(function(){
     $('#navbar').hover(function(){
-    	var tp = $('body').scrollTop();
-    	$('#checkpos').text(tp);	
+        var tp = $('body').scrollTop();
+        $('#checkpos').text(tp);    
         $(this).animate({"margin-left":'0px'},500);
-    },function(){	   
+    },function(){      
         $(this).animate({"margin-left":'-10%'},500);
     });
 });
