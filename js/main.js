@@ -13,9 +13,9 @@ $(function(){
     return true;
 });
 
-
+/*
 $(function(){
-    $('#navbar').hover(function(){
+    $('#navbar').h(function(){
         var tp = $('body').scrollTop();
         $('#checkpos').text(tp);    
         $(this).animate({"margin-left":'0px'},500);
@@ -23,4 +23,34 @@ $(function(){
         $(this).animate({"margin-left":'-10%'},500);
     });
 });
+*/
 
+$(document).ready(function(){
+    var count = 0;
+    $("#navbar").click(function(){
+        count++;
+    //even odd click detect 
+            var isEven = function(someNumber) {
+            return (someNumber % 2 === 0) ? true : false;
+            };
+    // on odd clicks do this
+    if (isEven(count) === false) {
+        $("#navbar").animate({"margin-left":'-10%'},500);
+    }
+    // on even clicks do this
+    else if (isEven(count) === true) {
+        $("#navbar").animate({"margin-left":'0px'},500);
+            }
+    });
+});
+
+$("#click").click(function() {
+  $("#cover").removeClass('hidden');
+  $("#message").removeClass('hidden');
+  $(this).addClass('hidden');
+});
+$("#x, #cover").click(function() {
+  $("#cover").addClass('hidden');
+  $("#message").addClass('hidden');
+  $("#click").removeClass('hidden');
+});

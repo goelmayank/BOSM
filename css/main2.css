@@ -1,0 +1,34 @@
+
+#socialcontainer{
+  right: 5%;
+  height: 40px;
+  width: 200px;
+  float: right;
+  bottom: 20px;
+  position: absolute;
+  background: transparent;
+}
+
+.socialicon
+{
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#fb :hover{
+  background: #3b5998;
+  border-radius: 20px;
+}
+#yt :hover{
+  background: #c4302b;
+  border-radius: 20px;
+}
+#tw :hover{
+  background:  #00aced;
+  border-radius: 20px;
+}

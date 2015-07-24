@@ -32,201 +32,181 @@
 	<meta property="og:image" content="http://www.bits-bosm.org/images/fb2.png">
 	<meta property="og:type" content="website">
 
-	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
-	<script src="js/jquery.timeTo.js"></script>
-	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
-	
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Play:400,700' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="css/pictureflip.css">
+
+	// <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	// <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
+	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
+	<script src="js/jquery.timeTo.js"></script>
+	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
+	// <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="icons/ss-standard.css" />
+	<link rel="stylesheet" type="text/css" href="css/pictureflip.css" />
+
+	<script type="text/javascript" src="//use.typekit.net/vue1oix.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<script src="js/modernizr.js"></script>
+	<script src="js/jquery.pictureflip.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#flipbook').pageFlip({});
+
+		});
+	</script>
 
 </head>
 
 <body>
+	<div id="mainnav">
+		<div id="menubutton">
+			<a id="nav-toggle" class="active" href="#"><span></span></a>
+		</div>
+		<div id="logo"></div>
+		<a href="" target="_blank">
+			<div id="login">
+				LOGIN
+			</div>
+		</a>
+	</div>
 
 	<div id="landing" class= "cover">
-		<div class='slider'>
-			<div class='slide1'></div>
-			<div class='slide2'></div>
-			<div class='slide3'></div>
-			<div class='slide4'></div>
+
+		<div id="socialcontainer">
+			<a href="http://www.youtube.com/user/bitsbosm" target="_blank">
+				<div class = "socialicon" id="yt">
+					<img src="images/youtube.png">
+				</div>
+			</a>
+			<a href="https://twitter.com/BOSM_BITSPilani" target="_blank">
+				<div class = "socialicon" id="tw">
+					<img src="images/twitter.png">
+				</div>
+			</a>
+			<a href="http://www.facebook.com/bosmbitspilani" target="_blank">
+				<div class = "socialicon" id="fb">
+					<img src="images/facebook.png">
+				</div>
+			</a>
+			<a href="http://en.wikipedia.org/wiki/BOSM_(festival)" target="_blank">
+				<div class = "socialicon" id="wiki">
+					<img src="images/wiki.png">
+				</div>
+			</a>
+		</div>
+
+		<div id="message">
+			<a id="x">x</a>
+			<h3>Ouch . . . That's not good.</h3>
+			<p>Recently, your account has been lost due to unknown causes. Assumptions have been made, but overall it has been confirmed that your account and all information associated with it (including your Social Security Number and Birth Certificate) has vanished. We are truly sorry, but do hope you choose us again for all your security needs!</p>
+		</div>
+		<div id="cover">
 
 		</div>
-		<div id="logo">
-
-		</div>
+		<button id="click" class="hidden">Your notifications!
+		</button>
 	</div>
+
 	<div id="home" class= "cover">
 		<img src="./images/triangles.png" id="triangles">
 	</div>
 	<div id="events" class="cover">
 
 		<div id="badabox">
-			<div onmouseover="funcslidei(bx1, panel1)" onmouseout="funcslidef(bx1, panel1)" class="boxes" id = "bx1">
+			<div onmouseover="funcslidei(bx1, panel1)" onmouseout="funcslidef(bx1, panel1)" onclick="loadXMLDoc(1)" class="boxes" id = "bx1">
 				<img src="bosm events/ath.png" id="e1" class="evpic">
-				<div class="pop" id="pop1">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel1">Athletics</div>
 			</div>
-			<div onmouseover="funcslidei(bx2, panel2)" onmouseout="funcslidef(bx2, panel2)" class="boxes" id = "bx2">
+			<div onmouseover="funcslidei(bx2, panel2)" onmouseout="funcslidef(bx2, panel2)" onclick="loadXMLDoc()" class="boxes" id = "bx2">
 				<img src="bosm events/badmi.png" id="e2" class="evpic">
-				<div class="pop" id="pop2">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel2">Badminton</div>
 			</div>
-			<div onmouseover="funcslidei(bx3, panel3)" onmouseout="funcslidef(bx3, panel3)" class="boxes" id = "bx3">
+			<div onmouseover="funcslidei(bx3, panel3)" onmouseout="funcslidef(bx3, panel3)" onclick="loadXMLDoc()" class="boxes" id = "bx3">
 				<img src="bosm events/bb.png" id="e3" class="evpic">
-				<div class="pop" id="pop3">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel3">Basketball</div>
 			</div>
-			<div onmouseover="funcslidei(bx4, panel4)" onmouseout="funcslidef(bx4, panel4)" class="boxes" id = "bx4">
+			<div onmouseover="funcslidei(bx4, panel4)" onmouseout="funcslidef(bx4, panel4)" onclick="loadXMLDoc()" class="boxes" id = "bx4">
 				<img src="bosm events/bodybui.png" id="e4" class="evpic">
-				<div class="pop" id="pop4">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
 				<div id="panel4">Bodybuilding</div>
 			</div>
-			<div onmouseover="funcslidei(bx5, panel5)" onmouseout="funcslidef(bx5, panel5)" class="boxes" id = "bx5">
+			<div onmouseover="funcslidei(bx5, panel5)" onmouseout="funcslidef(bx5, panel5)" onclick="loadXMLDoc()" class="boxes" id = "bx5">
 				<img src="bosm events/carrom.png" id="e5" class="evpic">
-				<div class="pop" id="pop5">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel5">Carrom</div>
 			</div>
-			<div onmouseover="funcslidei(bx6, panel6)" onmouseout="funcslidef(bx6, panel6)" class="boxes" id = "bx6">
+			<div onmouseover="funcslidei(bx6, panel6)" onmouseout="funcslidef(bx6, panel6)" onclick="loadXMLDoc()" class="boxes" id = "bx6">
 				<img src="bosm events/che.png" id="e6" class="evpic">
-				<div class="pop" id="pop6">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel6">Chess</div>
 			</div>
-			<div onmouseover="funcslidei(bx7, panel7)" onmouseout="funcslidef(bx7, panel7)" class="boxes" id = "bx7">
+			<div onmouseover="funcslidei(bx7, panel7)" onmouseout="funcslidef(bx7, panel7)" onclick="loadXMLDoc()" class="boxes" id = "bx7">
 				<img src="bosm events/cric.png" id="e7" class="evpic">
-				<div class="pop" id="pop7">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel7">Cricket</div>
 			</div>
-			<div onmouseover="funcslidei(bx8, panel8)" onmouseout="funcslidef(bx8, panel8)" class="boxes" id = "bx8">
+			<div onmouseover="funcslidei(bx8, panel8)" onmouseout="funcslidef(bx8, panel8)" onclick="loadXMLDoc()" class="boxes" id = "bx8">
 				<img src="bosm events/foot.png" id="e8" class="evpic">
-				<div class="pop" id="pop8">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel8">Football</div>
 			</div>
-			<div onmouseover="funcslidei(bx9, panel9)" onmouseout="funcslidef(bx9, panel9)" class="boxes" id = "bx9">
+			<div onmouseover="funcslidei(bx9, panel9)" onmouseout="funcslidef(bx9, panel9)" onclick="loadXMLDoc()" class="boxes" id = "bx9">
 				<img src="bosm events/hock.png" id="e9" class="evpic">
-				<div class="pop" id="pop9">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel9">Hockey</div>
 			</div>
-			<div onmouseover="funcslidei(bx10, panel10)" onmouseout="funcslidef(bx10, panel10)" class="boxes" id = "bx10">
+			<div onmouseover="funcslidei(bx10, panel10)" onmouseout="funcslidef(bx10, panel10)" onclick="loadXMLDoc()" class="boxes" id = "bx10">
 				<img src="bosm events/mis.png" id="e10" class="evpic">
-				<div class="pop" id="pop10">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel10">Miscellaneous</div>
 			</div>
-			<div onmouseover="funcslidei(bx11, panel11)" onmouseout="funcslidef(bx11, panel11)" class="boxes" id = "bx11">
+			<div onmouseover="funcslidei(bx11, panel11)" onmouseout="funcslidef(bx11, panel11)" onclick="loadXMLDoc()" class="boxes" id = "bx11">
 				<img src="bosm events/onli.png" id="e11" class="evpic">
-				<div class="pop" id="pop11">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel11">Online</div>
 			</div>
-			<div onmouseover="funcslidei(bx12, panel12)" onmouseout="funcslidef(bx12, panel12)" class="boxes" id = "bx12">
+			<div onmouseover="funcslidei(bx12, panel12)" onmouseout="funcslidef(bx12, panel12)" onclick="loadXMLDoc()" class="boxes" id = "bx12">
 				<img src="bosm events/power.png" id="e12" class="evpic">
-				<div class="pop" id="pop12">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel12">Weight lifting</div>
 			</div>
-			<div onmouseover="funcslidei(bx13, panel13)" onmouseout="funcslidef(bx13, panel13)" class="boxes" id = "bx13">
+			<div onmouseover="funcslidei(bx13, panel13)" onmouseout="funcslidef(bx13, panel13)" onclick="loadXMLDoc()" class="boxes" id = "bx13">
 				<img src="bosm events/squa.png" id="e13" class="evpic">
-				<div class="pop" id="pop13">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel13">Squash</div>
 			</div>
-			<div onmouseover="funcslidei(bx14, panel14)" onmouseout="funcslidef(bx14, panel14)" class="boxes" id = "bx14">
+			<div onmouseover="funcslidei(bx14, panel14)" onmouseout="funcslidef(bx14, panel14)" onclick="loadXMLDoc()" class="boxes" id = "bx14">
 				<img src="bosm events/swim.png" id="e14" class="evpic">
-				<div class="pop" id="pop14">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel14">Swimming</div>
 			</div>
-			<div onmouseover="funcslidei(bx15, panel15)" onmouseout="funcslidef(bx15, panel15)" class="boxes" id = "bx15">
+			<div onmouseover="funcslidei(bx15, panel15)" onmouseout="funcslidef(bx15, panel15)" onclick="loadXMLDoc()" class="boxes" id = "bx15">
 				<img src="bosm events/taek.png" id="e15" class="evpic">
-				<div class="pop" id="pop15">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel15">Taekwondo</div>
 			</div>
-			<div onmouseover="funcslidei(bx16, panel16)" onmouseout="funcslidef(bx16, panel16)" class="boxes" id = "bx16">
+			<div onmouseover="funcslidei(bx16, panel16)" onmouseout="funcslidef(bx16, panel16)" onclick="loadXMLDoc()" class="boxes" id = "bx16">
 				<img src="bosm events/tenn.png" id="e16" class="evpic">
-				<div class="pop" id="pop16">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel16">Tennis</div>
 			</div>
-			<div onmouseover="funcslidei(bx17, panel17)" onmouseout="funcslidef(bx17, panel17)" class="boxes" id = "bx17">
+			<div onmouseover="funcslidei(bx17, panel17)" onmouseout="funcslidef(bx17, panel17)" onclick="loadXMLDoc()" class="boxes" id = "bx17">
 				<img src="bosm events/tt.png" id="e17" class="evpic">
-				<div class="pop" id="pop17">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel17">Table tennis</div>
 			</div>
-			<div onmouseover="funcslidei(bx18, panel18)" onmouseout="funcslidef(bx18, panel18)" class="boxes" id = "bx18">
+			<div onmouseover="funcslidei(bx18, panel18)" onmouseout="funcslidef(bx18, panel18)" onclick="loadXMLDoc()" class="boxes" id = "bx18">
 				<img src="bosm events/volley.png" id="e18" class="evpic">
-				<div class="pop" id="pop18">
-					<span>✖</span>
-					<h1>jQuery Pop Up</h1>
-					<p>This is a random pop up, hopefully its not annoying.</p>
-				</div>
+
 				<div id="panel18">Volleyball</div>
 			</div>
 			<div id="rightarr">right</div>
@@ -236,19 +216,53 @@
 		<div id="eoverlay"></div>
 		<div id="eexit">E</div>          
 	</div> 
-	<div id="eventstitle">EVENTS</div>   
-	<div id="yodh" class= "cover"></div>
+	<div id="eventstitle">EVENTS</div>  
+
+	<div id="yodh" class= "cover"><img id="yodh_image" src="./images/yodh1.png">
+		<div id="yodh_heading">YODH</div>
+
+		<div id="yodh_panel">
+			<div id="yodh_content">
+				<p>More Than Just A Game..</p>
+				<p>&ldquo;Do you know what my favorite part of game is? The opportunity to play&ldquo;</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Mike Singletary</p>
+				<p>How many kids in India actually get a chance to experience this?</p>
+				<p>Shockingly, in India , 43.48% of schools don&rsquo;t have recreational facilities for their kids. Rajasthan fares even worse, with&nbsp; 51.61% of the schools having no playgrounds. This BOSM, Nirmaan-Pilani presents a unique opportunity for all kids to showcase their sporting talent.</p>
+				<p>YODH 2014 is a two-day inter-school sports event. One of the most brilliant initiatives taken by BITS. It is an effort to give a chance to students to develop their interest in sports, an effort to create some opportunities for talented, deserving students.</p>
+				<p>This sports extravaganza, with numerous sporting events like athletics, chess, cricket, badminton and many more events,&nbsp; will witness participation from more than 200 students of classes 6<sup>th</sup> to 10<sup>th</sup>.&nbsp; 10+ schools from in and around Pilani will be participating in the event. These schools have only one thing in common: no playground facilities, no dedicated sports teachers, lack of knowledge about the importance of sports in the personality building of a student, yet a burning desire to overcome these difficulties and emerge as winners. Yodh is an enterprise from our side to provide a platform to let the school authorities as well as students discover their hidden potential, which has remained untapped all these years.</p><br>
+				<p>Date: </p>
+				<p>Time:</p>
+				<p>Venue: GymG, SAC and MedC grounds</p><br>
+				<p>For further details contact:</p>
+				<p></p>
+				<p></p>
+				<p>&nbsp;</p>
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+
+
 	<div id="gallery" class= "cover">
 		<div id="galtitle">GALLERY</div>
 		<div id="gbadabox">
-			<div id="g1" class="frames fupper" style="background-image:url(images/4.jpg); background-size:140% 100%;" onclick="gpopup(1)"></div>                            
-			<div id="g2" class="frames fupper" style="background-image:url(images/7.jpg); background-size:140% 100%;" onclick="gpopup(2)"></div>
-			<div id="g3" class="frames fupper" style="background-image:url(images/4.jpg); background-size:140% 100%;" onclick="gpopup(3)"></div>
-			<div id="g4" class="frames fupper" style="background-image:url(images/5.jpg); background-size:140% 100%;" onclick="gpopup(4)"></div>
-			<div id="g5" class="frames flower" style="background-image:url(images/10.jpg); background-size:140% 100%;" onclick="gpopup(5)"></div>
-			<div id="g6" class="frames flower" style="background-image:url(images/11.jpg); background-size:140% 100%;" onclick="gpopup(6)"></div>
-			<div id="g7" class="frames flower" style="background-image:url(images/12.jpg); background-size:140% 100%;" onclick="gpopup(7)"></div>
-			<div id="g8" class="frames flower" style="background-image:url(images/13.jpg); background-size:140% 100%;" onclick="gpopup(8)"></div>
+			<div id="g1" class="frames fupper" style="background-image:url(images/gallery/1.jpg); background-size:140% 100%;" onclick="gpopup(1)"></div>                            
+			<div id="g2" class="frames fupper" style="background-image:url(images/gallery/2.jpg); background-size:140% 100%;" onclick="gpopup(2)"></div>
+			<div id="g3" class="frames fupper" style="background-image:url(images/gallery/3.jpg); background-size:140% 100%;" onclick="gpopup(3)"></div>
+			<div id="g4" class="frames fupper" style="background-image:url(images/gallery/4.jpg); background-size:140% 100%;" onclick="gpopup(4)"></div>
+			<div id="g5" class="frames fupper" style="background-image:url(images/gallery/5.jpg); background-size:140% 100%;" onclick="gpopup(5)"></div>
+			<div id="g6" class="frames fupper" style="background-image:url(images/gallery/6.jpg); background-size:140% 100%;" onclick="gpopup(6)"></div>
+			<div id="g7" class="frames flower" style="background-image:url(images/gallery/7.jpg); background-size:140% 100%;" onclick="gpopup(7)"></div>
+			<div id="g8" class="frames flower" style="background-image:url(images/gallery/8.jpg); background-size:140% 100%;" onclick="gpopup(8)"></div>
+			<div id="g9" class="frames flower" style="background-image:url(images/gallery/9.jpg); background-size:140% 100%;" onclick="gpopup(9)"></div>
+			<div id="g10" class="frames flower" style="background-image:url(images/gallery/10.jpg); background-size:140% 100%;" onclick="gpopup(10)"></div>
+			<div id="g11" class="frames flower" style="background-image:url(images/gallery/11.jpg); background-size:140% 100%;" onclick="gpopup(11)"></div>
+			<div id="g12" class="frames flower" style="background-image:url(images/gallery/12.jpg); background-size:140% 100%;" onclick="gpopup(12)"></div>
+
 		</div>
 		<div id="goverlay"></div>
 		<div id="bigpiccont"><img id="bigpic" src=""></div>
@@ -261,254 +275,383 @@
 		<div id="sponstitle">SPONSORS</div>
 		<div id="flipbook">
 			<div class="slide">
-				<img class="img img-responsive" src="images/1.jpg" alt="" /> 
+				<img src="images/1.jpg" alt="" /> 
 				<div class="content"><a href="#">Flowers: What you didn't know</a></div> 
 			</div>
 			<div class="slide">
-				<img class="img-responsive" src="images/2.jpg" alt="" /> 
+				<img src="images/2.jpg" alt="" /> 
 				<div class="content"><a href="#">Flowers: Real or Fiction?</a></div> 
 			</div>
 			<div class="slide">
-				<img class="img-responsive" src="images/3.jpg" alt="" /> 
+				<img src="images/3.jpg" alt="" /> 
 				<div class="content"><a href="#">A Flower ate my Baby!</a></div> 
 			</div>
 			<div class="slide">
-				<img class="img-responsive" src="images/4.jpg" alt="" /> 
+				<img src="images/4.jpg" alt="" /> 
 				<div class="content"><a href="#">Will Flowers Destroy Earth?</a></div>
 			</div>
 		</div>
-	</div>
-	<div id="blog" class= "cover">
-		<div id="blogtitle">BLOG</div>
-	</div>
-	<div id="contacts" class= "cover">
-		<div id="contactstitle">CONTACTS</div>
+
 	</div>
 
-	<div id="navbar">
-		<div class="navitem"><div class="navback"></div><a href="#home">HOME</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#events">EVENTS</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#yodh">YODH</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#gallery">GALLERY</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#sponsors">SPONSORS</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#blog">BLOG</a></div>
-		<div class="navitem"><div class="navback"></div><a href="#contacts">CONTACTS</a></div>
-	</div>
+</div>
+<div id="blog" class= "cover">
+	<div id="blogtitle">BLOG</div>
+  </div><!-- 
+  <div id="contacts" class= "cover">
+    <div id="contactstitle">CONTACTS</div>
+</div> -->
+<div id="contacts" class= "cover">
+	<div id="contacts_heading">CONTACTS</div>
+
+	<ul>
+		<li class="contact">
+			<b>Sports Secretary</b><br>
+			Shambhavi Mehrotra<br>
+			+91-8290900449<br>
+			shambhavi@bits-bosm.org
+		</li>
+
+		<li class="contact">
+			<b>Joint Sports Secretary</b><br>
+			Govinda Nathani<br>
+			+91-8503857881<br>
+			govinda@bits-bosm.org
+		</li>
+
+		<li class="contact">
+			<b>Joint Sports Secretary</b><br>
+			Amolak Singh<br>
+			+91-9772234241<br>
+			amolak@bits-bosm.org
+		</li>
+		<li class="contact">
+
+			<b>Joint Sports Secretary</b><br>
+			Akshat Dubey<br>           
+			+91-9462181899<br> 
+			akshat@bits-bosm.org
+		</li>
+
+		<li class="contact"><b>For Correspondence, Registration and Invites</b><br>
+			Vinit Bhat<br>                
+			+91-9928086307<br>                
+			pcr@bits-bosm.org
+		</li>             
 
 
-	<div id="checkpos"></div>
-	<!-- **********************************************Assigning id to gallery images to use as variables in script****************************************-->
-	<img id="gimg1" src="images/4.jpg" style="display:none">
-	<img id="gimg2" src="images/7.jpg" style="display:none">
-	<img id="gimg3" src="images/4.jpg" style="display:none">
-	<img id="gimg4" src="images/5.jpg" style="display:none">
-	<img id="gimg5" src="images/10.jpg" style="display:none">
-	<img id="gimg6" src="images/11.jpg" style="display:none">
-	<img id="gimg7" src="images/12.jpg" style="display:none">
-	<img id="gimg8" src="images/13.jpg" style="display:none">
+		<li class="contact">
+			<b>For Scheduling and Events</b><br>
+			Neil Dave<br>               
+			+91-9772211599 <br>               
+			controlz@bits-bosm.org
+		</li>           
 
-	<!--***************************************************************************************************************************************************-->
 
-	<script src="js/jquery.pictureflip.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
+		<li class="contact">
+			<b>For Reception and Accommodation:</b><br>
+			Basudev Choudhury<br>                
+			+91-9929082070<br>                
+			recnacc@bits-bosm.org
+		</li>
 
-			$('#flipbook').pageFlip({});
+		<li class="contact">   
+			<b>For Sponsorship and Marketing</b><br>             
+			Vishesh Sharma<br>                
+			+91-7728807829<br>               
+			vishesh@bits-bosm.org
+		</li>
 
-		});
-	</script>
+		<li class="contact" > 
+			<b>For Website Related Queries</b><br>
+			webmaster@bits-bosm.org      
+		</li>
 
-	<script type="text/javascript" src="js/main.js"></script>
+	</ul>
+</div>
 
-	<script type="text/javascript">
-		var cw = $('.frames').width();
-		$('.frames').css({'height':cw+'px'});
 
-		var ch = $('.frames').height();
-		var kk = ch + 12;
-		$('.flower').css({'top':kk + 'px'});
 
-		$('#gbadabox').css({'height':kk + kk +'px'});
+<div id="navbar">
+	<div class="navitem"><div class="navback"></div><a href="#home">HOME</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#events">EVENTS</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#yodh">YODH</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#gallery">GALLERY</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#sponsors">SPONSORS</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#blog">BLOG</a></div>
+	<div class="navitem"><div class="navback"></div><a href="#contacts">CONTACTS</a></div>
+</div>
 
-	</script>
-	<script type="text/javascript">
-		$(".boxes").click(function()
+
+<div id="checkpos"></div>
+<!-- **********************************************Assigning id to gallery images to use as variables in script****************************************-->
+<img id="gimg1" src="images/gallery/1.jpg" style="display:none">
+<img id="gimg2" src="images/gallery/2.jpg" style="display:none">
+<img id="gimg3" src="images/gallery/3.jpg" style="display:none">
+<img id="gimg4" src="images/gallery/4.jpg" style="display:none">
+<img id="gimg5" src="images/gallery/5.jpg" style="display:none">
+<img id="gimg6" src="images/gallery/6.jpg" style="display:none">
+<img id="gimg7" src="images/gallery/7.jpg" style="display:none">
+<img id="gimg8" src="images/gallery/8.jpg" style="display:none">
+<img id="gimg9" src="images/gallery/9.jpg" style="display:none">
+<img id="gimg10" src="images/gallery/10.jpg" style="display:none">
+<img id="gimg11" src="images/gallery/11.jpg" style="display:none">
+<img id="gimg12" src="images/gallery/12.jpg" style="display:none">
+
+<!--***************************************************************************************************************************************************-->
+
+
+<script type="text/javascript" src="js/main.js">
+</script>
+
+<script type="text/javascript">
+	var cw = $('.frames').width();
+	$('.frames').css({'height':cw+'px'});
+
+	var ch = $('.frames').height();
+	var kk = ch + 12;
+	$('.flower').css({'top':kk + 'px'});
+
+	$('#gbadabox').css({'height':kk + kk +'px'});
+	var jj = $(".cover").height();
+	var jjj = jj*0.5;
+	$('#gbadabox').css({'top': 32.5 + jjj - kk +'px'});
+
+</script>
+<script type="text/javascript">
+	$(".boxes").click(function()
+	{
+		$("#eoverlay").fadeIn(500);
+		$("#eexit").fadeIn(500);
+	});
+</script>
+<script type="text/javascript">      
+
+	var height = $(".boxes").height() - 20;
+	var width = $(".boxes").width() - 20; 
+
+	function funcslidef(element1, element2)
+	{  
+		var x = event.clientX;
+		var y = event.clientY;
+
+		var m = $(element1);
+		var o = $(element2).attr('id');
+		var n = m.position();
+		var eTop = $("#badabox").offset().top;
+		var eLeft = $("#badabox").offset().left;
+		var tt = eTop - $(window).scrollTop();
+		var tl = eLeft - $(window).scrollLeft();
+
+		a = n.top + 20 + tt;
+		b = n.left + 20 + tl;
+		c = n.left + width + tl;
+		d = n.top + height + tt;
+
+		if(y>d)
 		{
-			$("#eoverlay").fadeIn(500);
-			$("#eexit").fadeIn(500);
-		});
-	</script>
-	<script type="text/javascript">      
-
-		var height = $(".boxes").height() - 20;
-		var width = $(".boxes").width() - 20; 
-
-		function funcslidef(element1, element2)
-		{  
-			var x = event.clientX;
-			var y = event.clientY;
-
-			var m = $(element1);
-			var o = $(element2).attr('id');
-			var n = m.position();
-			var eTop = $("#badabox").offset().top;
-			var eLeft = $("#badabox").offset().left;
-			var tt = eTop - $(window).scrollTop();
-			var tl = eLeft - $(window).scrollLeft();
-
-			a = n.top + 20 + tt;
-			b = n.left + 20 + tl;
-			c = n.left + width + tl;
-			d = n.top + height + tt;
-
-			if(y>d)
-			{
-				document.getElementById(o).className = "slideftb";
-			}
-			else if(x>c)
-			{
-				document.getElementById(o).className = "slideflr";
-			}
-			else if(y<a)
-			{
-				document.getElementById(o).className = "slidefbt";
-			}
-			else if(x<b)
-			{
-				document.getElementById(o).className = "slidefrl";
-			}
-
-		};
-
-
-		function funcslidei(element1, element2)
-		{  
-			var x = event.clientX;
-			var y = event.clientY;
-
-			var p = $(element1);
-			var o = $(element2).attr('id');
-			var q = p.position();     
-			var eTop = $("#badabox").offset().top;
-			var eLeft = $("#badabox").offset().left;
-			var tt = eTop - $(window).scrollTop();
-			var tl = eLeft - $(window).scrollLeft();
-
-			u = q.top + 20 + tt;
-			v = q.left + 20 + tl;
-			r = q.left + width + tl;
-			s = q.top + height + tt;
-
-			if(y<u)
-			{
-				document.getElementById(o).className = "slideitb";
-			}
-			else if(x<v)
-			{
-				document.getElementById(o).className = "slideilr";
-			}
-			else if(y>s)
-			{
-				document.getElementById(o).className = "slideibt";
-			}
-			else if(x>r)
-			{
-				document.getElementById(o).className = "slideirl";
-			}
-		};
-
-
-	</script>
-
-	<script type="text/javascript">
-		var x=0;
-		var a =  document.getElementById("gimg1").src;
-		var b =  document.getElementById("gimg2").src;
-		var c =  document.getElementById("gimg3").src;
-		var d =  document.getElementById("gimg4").src;
-		var e =  document.getElementById("gimg5").src;
-		var f =  document.getElementById("gimg6").src;
-		var g =  document.getElementById("gimg7").src;
-		var h =  document.getElementById("gimg8").src;
-		function gpopup(y)
+			document.getElementById(o).className = "slideftb";
+		}
+		else if(x>c)
 		{
-			x=y;
-
-
-			if(x==1)
-			{         
-				document.getElementById("bigpic").src= a;
-			}
-			if(x==2)
-			{        
-				document.getElementById("bigpic").src= b;        
-			}
-			if(x==3)
-			{         
-				document.getElementById("bigpic").src= c;        
-			}
-			if(x==4)
-			{         
-				document.getElementById("bigpic").src= d;        
-			}
-			if(x==5)
-			{         
-				document.getElementById("bigpic").src= e;        
-			}
-			if(x==6)
-			{         
-				document.getElementById("bigpic").src= f;
-			}
-			if(x==7)
-			{         
-				document.getElementById("bigpic").src= g;        
-			}
-			if(x==8)
-			{         
-				document.getElementById("bigpic").src= h;        
-			}
-			$("#goverlay").fadeIn(500);
-			$("#bigpiccont").fadeIn(500);
-			$("#previous").fadeIn(500);
-			$("#next").fadeIn(500);
-			$("#gexit").fadeIn(500);
-		};
-
-		$("#next").click(function(){
-			if(x<8){x++;}
-			gpopup(x);
+			document.getElementById(o).className = "slideflr";
 		}
-		);
-		$("#previous").click(function(){
-			if(x>1){x--};
-			gpopup(x);
-		}
-		);
-		$("#gexit").click(function(){
-			document.getElementById("goverlay").style.display= "none"; 
-			document.getElementById("bigpiccont").style.display= "none"; 
-			document.getElementById("gexit").style.display= "none"; 
-			document.getElementById("next").style.display= "none";
-			document.getElementById("previous").style.display= "none";
-		}
-		);
-		$("#eexit").click(function(){
-			document.getElementById("eoverlay").style.display= "none"; 
-			document.getElementById("eexit").style.display= "none"; 
-		}
-		);
-	</script>
-	<script type="text/javascript">
-		$("#rightarr").click(function()
+		else if(y<a)
 		{
-			$("#badabox").animate({left: "-100%"}, 500, "swing");     
-
-		});
-		$("#leftarr").click(function()
+			document.getElementById(o).className = "slidefbt";
+		}
+		else if(x<b)
 		{
-			$("#badabox").animate({left: "0%"}, 500, "swing");      
-		});
-	</script>
+			document.getElementById(o).className = "slidefrl";
+		}
 
+	};
+
+
+	function funcslidei(element1, element2)
+	{  
+		var x = event.clientX;
+		var y = event.clientY;
+
+		var p = $(element1);
+		var o = $(element2).attr('id');
+		var q = p.position();     
+		var eTop = $("#badabox").offset().top;
+		var eLeft = $("#badabox").offset().left;
+		var tt = eTop - $(window).scrollTop();
+		var tl = eLeft - $(window).scrollLeft();
+
+		u = q.top + 20 + tt;
+		v = q.left + 20 + tl;
+		r = q.left + width + tl;
+		s = q.top + height + tt;
+
+		if(y<u)
+		{
+			document.getElementById(o).className = "slideitb";
+		}
+		else if(x<v)
+		{
+			document.getElementById(o).className = "slideilr";
+		}
+		else if(y>s)
+		{
+			document.getElementById(o).className = "slideibt";
+		}
+		else if(x>r)
+		{
+			document.getElementById(o).className = "slideirl";
+		}
+	};
+
+
+</script>
+
+<script type="text/javascript">
+	var x=0;
+	var a =  document.getElementById("gimg1").src;
+	var b =  document.getElementById("gimg2").src;
+	var c =  document.getElementById("gimg3").src;
+	var d =  document.getElementById("gimg4").src;
+	var e =  document.getElementById("gimg5").src;
+	var f =  document.getElementById("gimg6").src;
+	var g =  document.getElementById("gimg7").src;
+	var h =  document.getElementById("gimg8").src;
+	var i =  document.getElementById("gimg9").src;
+	var j =  document.getElementById("gimg10").src;
+	var k =  document.getElementById("gimg11").src;
+	var l =  document.getElementById("gimg12").src;
+	function gpopup(y)
+	{
+		x=y;
+
+
+		if(x==1)
+		{         
+			document.getElementById("bigpic").src= a;
+		}
+		if(x==2)
+		{        
+			document.getElementById("bigpic").src= b;        
+		}
+		if(x==3)
+		{         
+			document.getElementById("bigpic").src= c;        
+		}
+		if(x==4)
+		{         
+			document.getElementById("bigpic").src= d;        
+		}
+		if(x==5)
+		{         
+			document.getElementById("bigpic").src= e;        
+		}
+		if(x==6)
+		{         
+			document.getElementById("bigpic").src= f;
+		}
+		if(x==7)
+		{         
+			document.getElementById("bigpic").src= g;        
+		}
+		if(x==8)
+		{         
+			document.getElementById("bigpic").src= h;        
+		}
+		if(x==9)
+		{         
+			document.getElementById("bigpic").src= i;        
+		}
+		if(x==10)
+		{         
+			document.getElementById("bigpic").src= j;        
+		}
+		if(x==11)
+		{         
+			document.getElementById("bigpic").src= k;        
+		}
+		if(x==12)
+		{         
+			document.getElementById("bigpic").src= l;        
+		}
+		$("#goverlay").fadeIn(500);
+		$("#bigpiccont").fadeIn(500);
+		$("#previous").fadeIn(500);
+		$("#next").fadeIn(500);
+		$("#gexit").fadeIn(500);
+	};
+
+	$("#next").click(function(){
+		if(x<12){x++;}
+		gpopup(x);
+	}
+	);
+	$("#previous").click(function(){
+		if(x>1){x--};
+		gpopup(x);
+	}
+	);
+	$("#gexit").click(function(){
+		document.getElementById("goverlay").style.display= "none"; 
+		document.getElementById("bigpiccont").style.display= "none"; 
+		document.getElementById("gexit").style.display= "none"; 
+		document.getElementById("next").style.display= "none";
+		document.getElementById("previous").style.display= "none";
+	}
+	);
+	$("#eexit").click(function(){
+		document.getElementById("eoverlay").style.display= "none"; 
+		document.getElementById("eexit").style.display= "none"; 
+		$("#badabox").animate({height: "450px"}, 500, "swing");
+		$(".boxes").animate({height: "146px"}, 500, "swing");
+		$("#bx1, #bx2, #bx3, #bx4, #bx5, #bx6").animate({top: "0px"},500,"swing");
+		$("#bx7, #bx8, #bx9, #bx10, #bx11, #bx12").animate({top: "150px"},500,"swing");
+		$("#bx13, #bx14, #bx15, #bx16, #bx17, #bx18").animate({top: "300px"},500,"swing");
+		$("#eventstitle").css("display","block");
+		$("#eventstitle").animate({width: "200px"},200, "swing");
+		$("#rightarr, #leftarr").css("display","block");
+	}
+	);
+</script>
+<script type="text/javascript">
+	$("#rightarr").click(function()
+	{
+		$("#badabox").animate({left: "-100%"}, 500, "swing");     
+
+	});
+	$("#leftarr").click(function()
+	{
+		$("#badabox").animate({left: "0%"}, 500, "swing");      
+	});
+</script>
+<script>
+	function loadXMLDoc(k)
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+    	xmlhttp=new XMLHttpRequest();
+    }
+    else
+    {// code for IE6, IE5
+    	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function()
+    {
+    	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    	{
+    		document.getElementById("eoverlay").innerHTML=xmlhttp.responseText;
+    	}
+    }
+    xmlhttp.open("GET","http://bits-bosm.org/2015/event/1/",true);
+    xmlhttp.send();
+
+    document.getElementById("checkpos").innerHTML="dodo";
+    $("#badabox").animate({height: "0px"}, 500, "swing");
+    $(".boxes").animate({height: "0px",top: "-200px"}, 500, "swing");
+    $("#eventstitle").animate({width: "0px"}, 200, "swing",function(){$("#eventstitle").css("display","none");});
+    $("#rightarr, #leftarr").css("display","none");
+};
+</script>
 </body>
 </html>

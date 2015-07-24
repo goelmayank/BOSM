@@ -1,9 +1,9 @@
 #flipbook {
 	padding: 10px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-	margin: 20vh auto;
-	width: 80vw;
-	height: 60vh;
+	margin: 25vh auto;
+	width: 600px;
+	height: 330px;
 	background: #fff;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -23,10 +23,9 @@
 #flipbook .slide .img {
 	width: 50%;
 	position: absolute;
-	background-size: contain;
 	top: 0;
 	left: 0;
-	height: 50%
+	height: 310px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	background-size: 200% !important;
@@ -152,5 +151,44 @@
 	}
 }
 
+/* ------- IGNORE */
 
+#header {
+	width: 100%;
+	margin: 0px auto;
+}
+
+#header #center {
+	text-align: center;
+}
+
+#header h1 span {
+	color: #000;
+	display: block;
+	font-size: 50px;
+}
+
+#header p {
+	font-family: 'Georgia', serif;
+}
+#header h1 {
+	color: #892dbf;
+	font: bold 40px 'Bree Serif', serif;
+}
+
+#travel {
+	padding: 10px;
+	background: rgba(0,0,0,0.6);
+	border-bottom: 2px solid rgba(0,0,0,0.2);
+	font-variant: normal;
+	text-decoration: none;
+}
+
+#travel a {
+	font-family: 'Georgia', serif;
+	text-decoration: none;
+	border-bottom: 1px solid #f9f9f9;
+	color: #f9f9f9;
+	font-size: 1.6em;
+}
 
