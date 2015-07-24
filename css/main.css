@@ -69,7 +69,7 @@ body
   background: transparent;
   border: none;
   cursor: pointer;
-  margin: 0;
+  margin: 20vh auto;
   outline: none;
   position: relative;
 }

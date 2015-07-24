@@ -35,9 +35,14 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<style>
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+			background-size: 100vh 100vw;
+			margin: auto;
+		}
+	</style>
 
-	// <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	// <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
 	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
 	<script src="js/jquery.timeTo.js"></script>
 	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
@@ -78,6 +83,38 @@
 	</div>
 
 	<div id="landing" class= "cover">
+		<div class="container">
+			<br>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="images/1.jpg" alt="Chania" width="460" height="345">
+					</div>
+
+					<div class="item">
+						<img src="images/2.jpg" alt="Chania" width="460" height="345">
+					</div>
+
+					<div class="item">
+						<img src="images/3.jpg" alt="Flower" width="460" height="345">
+					</div>
+
+					<div class="item">
+						<img src="images/4.jpg" alt="Flower" width="460" height="345">
+					</div>
+				</div>
+				
+			</div>
+		</div>
 
 		<div id="socialcontainer">
 			<a href="http://www.youtube.com/user/bitsbosm" target="_blank">
