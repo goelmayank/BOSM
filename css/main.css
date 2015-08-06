@@ -819,7 +819,6 @@ section {
 
   /* CSS used here will be applied after bootstrap.css */
   .carousel {
-    position: relative;
     top: 20vh;
   }
   .item .thumb {
