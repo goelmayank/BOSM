@@ -118,7 +118,8 @@
 
 .mi-slider nav a.mi-selected:after {
 	border-color: transparent;
-	border-top-color: #fff;
+	border-top-color: #E6E6E6;
+	/*border-top-color: transparent;*/
 	border-width: 20px;
 	left: 50%;
 	margin-left: -20px;
