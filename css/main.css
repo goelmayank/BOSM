@@ -2,10 +2,10 @@
   font-family:Proxima Nova Rg;
   font-style: normal;
   src: url('./../fonts/ProximaNova-Regular.otf') format('opentype');
- }
+}
 
- body
- {
+body
+{
   margin: 0;
   padding: 0;
   background-color: black;
@@ -13,28 +13,28 @@
   overflow-x: hidden;
   height: 100vh;
   width: 100%;
- }
+}
 
- a,a:link,a:visited,a:hover,a:focus,a:active{
+a,a:link,a:visited,a:hover,a:focus,a:active{
   color: inherit;
   text-decoration: none;
- }
+}
 
- .cover
- {  position: absolute;
+.cover
+{  position: absolute;
   height: 100vh;
   width: 100%;
- }
+}
 
- #triangles{
+#triangles{
   -webkit-transform: rotate(180deg);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
- }
- #about
- {
+}
+#about
+{
   background-color: #E6E6E6 ;
   background-size: 100% 100%;
   top: 100vh;
@@ -444,12 +444,6 @@ button#click.hidden {
   background-color: #333333;
   top: 100vh;
 }
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  height: 90vh;
-  width: 100%;
-  margin: auto;
-}
 .divtitle
 {
   font-size: 40px;
@@ -464,9 +458,9 @@ button#click.hidden {
   width: auto;
   text-align: center;
   color: #cccccc;
- }
- #events
- {
+}
+#events
+{
   position: absolute;
   top: 300vh;
   width: 100%;
@@ -823,51 +817,31 @@ section {
 
   }
 
-  #slider-k {
-    position: absolute;
+  /* CSS used here will be applied after bootstrap.css */
+  .carousel {
+    position: relative;
     top: 20vh;
-    left: 10vw;
-    background: #fff;
-    width: 80vw;
-    height: 60vh;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: .5rem;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
   }
-  #slider-k .frame-k {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 30%;
-    height: 100%;
+  .item .thumb {
+    width: 25%;
+    cursor: pointer;
     float: left;
-    overflow: hidden;
-    border-left: 10px solid #fff;
-    pointer: cursor;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
-    transform: skewX(-20deg);
-    transition: width 1.2s ease-in-out;
   }
-  #slider-k:hover div {width: 108px;cursor: w-resize;}
-  #slider-k:hover div:hover {
-    width: 392px;}
+  .item .thumb img {
+    width: 100%;
+    margin: 2px;
+  }
+  .item img {
+    width: 100%;  
+  }
 
-    .frame-k img {
-      margin-left: -55px;
-      transform: skewX(20deg);
-
-    }
-
-    #slider-k > div:first-child {margin-left: -63px;}
-    #slider-k > div:last-child {margin-right: -63px;}
-
-    #contacts
-    {
-      background: #000000;
-      top: 700vh;
-    }
-    #contactstitle
-    {
+  #contacts
+  {
+    background: #000000;
+    top: 700vh;
+  }
+  #contactstitle
+  {
     /*font-size: 50px;
     line-height: 50px;
     height: 50px;
