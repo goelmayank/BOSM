@@ -7,7 +7,7 @@
 	<title>BITS BOSM 2015 | BITS Pilani</title>
 
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="robots" content="index, follow">
 	<meta name="googlebot" content="index, follow">
@@ -18,6 +18,7 @@
 	<meta name="rating" content="general">
 	<meta name="distribution" content="Global">
 	<meta name="revisit-after" content="2 days">
+
 
 	<meta property="og:title" content="BOSM 2015 | XXX International Sports Festival|BITS Pilani">
 	<meta property="og:site_name" content="BOSM Intro">
@@ -32,730 +33,735 @@
 	<meta property="og:image" content="http://www.bits-bosm.org/images/fb2.png">
 	<meta property="og:type" content="website">
 
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/modernizr-2.6.2.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/customMap.js"></script>
-
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
-	<script type="text/javascript" src="./js/imagesLoaded.js"></script>
-	<script src="js/jquery.timeTo.js"></script>
-	<!--<link rel="shortcut icon" href="./images/favicon.ico" /> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/main2.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
+	<link rel="stylesheet" type="text/css" href="css/glisse.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Play:400,700' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="js/jquerypulse.js"></script>
+	<style>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="js/modernizr.custom.63321.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script src="js/jquery.catslider.js"></script>
-	<script>
-		$(function() {
+		body>div{
+			position: relative;
+			min-height: 100%;
+			background-color: transparent; 
+		}
+	</style>
 
-			$( '#mi-slider' ).catslider();
-
-		});
-	</script>
 </head>
+<body onload="loader()">
+	<div id ="loader">
+		<img  src="img/loading.gif" class="loading">
+	</div>
+	<div id="overlay"></div>
+	<div id="landing">	
+		<img src="img/flood_light.png" class="fl_left"/>
+		<img src="img/flood_light.png" class="fl_right"/>
 
-<body>
-	<div id="mainnav">
-		<div id="menubutton">
-			<a id="nav-toggle" class="active" href="#"><span></span></a>
+		<img src="img/landing_logo.png" id="classylogo">
+
+		<div id="sticky_footer">
+			<img  src = "img/nav_bosm.svg" class="footer_bosm" />
+			<img  src = "img/notif.svg" class="footer_notif"  onclick="toggleVisibility('#live-chat');"/>
+			<!-- <img  src = "img/notif.svg" class="footer_notif"  onclick="alert('Hi')"/> -->
+			<div id="live-chat">
+
+				<header class="clearfix">
+
+					<a href="#" class="chat-close">x</a>
+
+					<h4>Notifications</h4>
+
+					<span class="chat-message-counter">3</span>
+
+				</header>
+
+				<div class="chat">
+
+					<div class="chat-history">
+
+						<div class="chat-message clearfix">
+
+							<img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
+
+							<div class="chat-message-content clearfix">
+
+								<span class="chat-time">13:35</span>
+
+								<h5>John Doe</h5>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, explicabo quasi ratione odio dolorum harum.</p>
+
+							</div> <!-- end chat-message-content -->
+
+						</div> <!-- end chat-message -->
+
+						<hr>
+
+						<div class="chat-message clearfix">
+
+							<img src="http://gravatar.com/avatar/2c0ad52fc5943b78d6abe069cc08f320?s=32" alt="" width="32" height="32">
+
+							<div class="chat-message-content clearfix">
+
+								<span class="chat-time">13:37</span>
+
+								<h5>Marco Biedermann</h5>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, nulla accusamus magni vel debitis numquam qui tempora rem voluptatem delectus!</p>
+
+							</div> <!-- end chat-message-content -->
+
+						</div> <!-- end chat-message -->
+
+						<hr>
+
+						<div class="chat-message clearfix">
+
+							<img src="http://lorempixum.com/32/32/people" alt="" width="32" height="32">
+
+							<div class="chat-message-content clearfix">
+
+								<span class="chat-time">13:38</span>
+
+								<h5>John Doe</h5>
+
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+							</div> <!-- end chat-message-content -->
+
+						</div> <!-- end chat-message -->
+
+						<hr>
+
+					</div> <!-- end chat-history -->
+
+
+				</div> <!-- end chat -->
+
+			</div> <!-- end live-chat -->
+
+			<a href="" target="_blank">
+				<img  src = "img/logintxt.svg" class="footer_logintxt" style="margin-left:-22px;padding-right:0px;" />
+				<img  src = "img/loginicon.svg" class="footer_loginicon"  />
+			</a>
+			<a href="" target="_blank">
+				<img  src = "img/regtxt.svg" class="footer_regtxt" style="margin-left:-25px; padding-right:0px;" />
+				<img  src = "img/regicon.svg" class="footer_regicon" />
+			</a>	
 		</div>
-		<a href="" target="_blank">
-			<div id="login">
-				LOGIN
+
+
+		<div class="component">
+			<!-- Start Nav Structure -->		
+			<img src="img/pointer.svg" id="pointer"/>	
+			<button class="cn-button" id="cn-button">
+				<img src="img/football.svg" /></button>
+
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+						<li><a href="#landing"><span class="ic">Home</span><span><img src="img/home.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#about"><span class="ic">About</span><span><img src="img/about.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#mascot"><span class="ic">Mascot</span><span><img src="img/mascot.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#events"><span class="ic">Events</span><span><img src="img/events.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#yodh"><span class="ic">Yodh</span><span><img src="img/yodh.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#gallery"><span class="ic">Gallery</span><span><img src="img/gallery.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#sponsors"><span class="ic">Sponsors</span><span><img src="img/sponsors.svg" style="width:20px;"/></span></a></li>	
+						<li><a href="#contacts"><span class="ic">Contacts</span><span><img src="img/contacts.svg" style="width:20px;"/></span></a></li>
+					</ul>
+				</div>
+			</div>		<!-- End of Nav Structure -->
+		</div>
+
+
+		<div id="about">
+			<div class="inner_cont">
+				<div class="main_head box_sizing">
+					<b>ABOUT BOSM</b>
+				</div>
+				<div class="main_text box_sizing scroll_d">
+					<p>"Courage is not the absence of fear. It is being afraid but being able to control that fear so you are able to perform at your highest ability. That's what makes a champion."</p>
+					<p>Because champions rise, champions fall, rise again, win it all.</p>
+					<p>It is not about winning, it is about taking part and becoming your own potential.</p>
+					<p>The BITS Open Sports Meet, or BOSM, as all know it, is one of the largest student managed Sports fests of the country. The four-day festival encompasses everything about sports.Aimed at providing a platform to colleges from all over India to showcase their talents, promoting healthy competition, it gives attendees an opportunity to take part in a variety of sports and events. With the last year.s edition witnessing phenomenal participation from colleges both from India and abroad, the 29th edition guarantees excitement well supplemented by floodlit matches in the evening and the unbridled enthusiasm of the crowds for highly competitive track and off-track events, in the true  spirit of sportsmanship and camaraderie.</p>
+					<p>18th September - 22nd September. BOSM 2015.</p>
+					<p>Come, battle it out, with grit and guts, in pursuit of glory.</p>
+				</div>
+				<div id="about_img">
+					<img src="img/logo.svg">
+				</div>
 			</div>
-		</a>
+		</div>
+		<div id="mascot">
+			<div class="inner_cont">
+				<div class="main_head box_sizing">
+					<b>BAXTER, THE MASCOT</b>
+				</div>
+				<div class="main_text box_sizing scroll_d">
+					Every festival needs a mascot symbol of the entire event. when it comes to BOSM, look no further than Baxter, the Desert Eagle. Officila mascot of the fest since 2013, Baxter epitomizes the virtues of strength, perseverance, endurance and the spirit of sportsmanship, providing a unique avenue for potential parters to interact with the paticipants and the audience at a more personal level.
+				</div>
+				<div id="mascot_img">
+					<img src="img/mascotbada.svg">
+				</div>
+			</div>
+		</div>
+		<div id="events">
+			<div class="divtitle headingstyle" id="eventstitle">EVENTS</div> 
+			<div id="badabox">
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx1">
+					<img src="bosm events/ath.svg" id="e1" class="evpic">
+
+					<div id="panel1">Athletics</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx2">
+					<img src="bosm events/bd.svg" id="e2" class="evpic">
+
+					<div id="panel2">Badminton</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx3">
+					<img src="bosm events/bski.svg" id="e3" class="evpic">
+
+					<div id="panel3">Basketball</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx4">
+					<img src="bosm events/body.svg" id="e4" class="evpic">
+					<div id="panel4">Bodybuilding</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx5">
+					<img src="bosm events/crm.svg" id="e5" class="evpic">
+
+					<div id="panel5">Carrom</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx6">
+					<img src="bosm events/che.svg" id="e6" class="evpic">
+
+					<div id="panel6">Chess</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx7">
+					<img src="bosm events/crc.svg" id="e7" class="evpic">
+
+					<div id="panel7">Cricket</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx8">
+					<img src="bosm events/sc.svg" id="e8" class="evpic">
+
+					<div id="panel8">Football</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx9">
+					<img src="bosm events/hok.svg" id="e9" class="evpic">
+
+					<div id="panel9">Hockey</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx10">
+					<img src="bosm events/mc.svg" id="e10" class="evpic">
+
+					<div id="panel10">Miscellaneous</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx11">
+					<img src="bosm events/onl.svg" id="e11" class="evpic">
+
+					<div id="panel11">Online</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx12">
+					<img src="bosm events/wei.svg" id="e12" class="evpic">
+
+					<div id="panel12">Weight lifting</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx13">
+					<img src="bosm events/sq.svg" id="e13" class="evpic">
+
+					<div id="panel13">Squash</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx14">
+					<img src="bosm events/sw.svg" id="e14" class="evpic">
+
+					<div id="panel14">Swimming</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx15">
+					<img src="bosm events/tw.svg" id="e15" class="evpic">
+
+					<div id="panel15">Taekwondo</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx16">
+					<img src="bosm events/ten.svg" id="e16" class="evpic">
+
+					<div id="panel16">Tennis</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx17">
+					<img src="bosm events/tt.svg" id="e17" class="evpic">
+
+					<div id="panel17">Table tennis</div>
+				</div>
+				<div onclick="loadXMLDoc()" class="boxes" id = "bx18">
+					<img src="bosm events/vb.svg" id="e18" class="evpic">
+
+					<div id="panel18">Volleyball</div>
+				</div>
+
+			</div>
+			<div id="eoverlay"></div>
+			<div id="eexit"></div>          
+		</div> 
+
+		<div id="yodh">
+			<div class="divtitle headingstyle" style="color:#81846A;">YODH</div>
+
+			<div id="yodh_panel">
+				<div class="text" id="yodh_content">
+					<p>More Than Just A Game..</p>
+					<p>&ldquo;Do you know what my favorite part of game is? The opportunity to play&ldquo;</p>
+					<p class="yodh_author">-Mike Singletary</p>
+					<p>How many kids in India actually get a chance to experience this?</p>
+					<p>Shockingly, in India , 43.48% of schools don&rsquo;t have recreational facilities for their kids. Rajasthan fares even worse, with&nbsp; 51.61% of the schools having no playgrounds. This BOSM, Nirmaan-Pilani presents a unique opportunity for all kids to showcase their sporting talent.</p>
+					<p>YODH 2014 is a two-day inter-school sports event. One of the most brilliant initiatives taken by BITS. It is an effort to give a chance to students to develop their interest in sports, an effort to create some opportunities for talented, deserving students.</p>
+					<p>This sports extravaganza, with numerous sporting events like athletics, chess, cricket, badminton and many more events,&nbsp; will witness participation from more than 200 students of classes 6<sup>th</sup> to 10<sup>th</sup>.&nbsp; 10+ schools from in and around Pilani will be participating in the event. These schools have only one thing in common: no playground facilities, no dedicated sports teachers, lack of knowledge about the importance of sports in the personality building of a student, yet a burning desire to overcome these difficulties and emerge as winners. Yodh is an enterprise from our side to provide a platform to let the school authorities as well as students discover their hidden potential, which has remained untapped all these years.</p><br>
+					<p>Date: </p>
+					<p>Time:</p>
+					<p>Venue: GymG, SAC and MedC grounds</p><br>
+					<p>For further details contact:</p>
+					<p></p>
+					<p></p>
+
+
+				</div>
+			</div>
+		</div>
+		<div id="gallery">
+			<div class="divtitle headingstyle" style="color:#86907A;">GALLERY</div>
+			<div id="block-photos" class="main-block block-photos">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/1.jpg" rel="grp" data-glisse-big="img/main/1.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/2.jpg" rel="grp" data-glisse-big="img/main/2.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/3.jpg" rel="grp" data-glisse-big="img/main/3.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/4.jpg" rel="grp" data-glisse-big="img/main/4.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/5.jpg" rel="grp" data-glisse-big="img/main/5.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/6.jpg" rel="grp" data-glisse-big="img/main/6.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/7.jpg" rel="grp" data-glisse-big="img/main/7.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/8.jpg" rel="grp" data-glisse-big="img/main/8.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/9.jpg" rel="grp" data-glisse-big="img/main/9.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/10.jpg" rel="grp" data-glisse-big="img/main/10.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/11.jpg" rel="grp" data-glisse-big="img/main/11.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/12.jpg" rel="grp" data-glisse-big="img/main/12.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/13.jpg" rel="grp" data-glisse-big="img/main/13.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/14.jpg" rel="grp" data-glisse-big="img/main/14.jpg" / >
+						</div>
+						<div class="photo-wrapper">
+							<img class="photo-thumb" src="img/thumbs/15.jpg" rel="grp" data-glisse-big="img/main/15.jpg" / >
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div id="sponsors">	
+			<div class="divtitle headingstyle" style="color:#555;">LAST YEAR'S SPONSORS</div>
+			<div class="main" style="    margin-top: -6em;">
+				<div id="mi-slider" class="mi-slider">
+					<ul>
+						<li><a href="#"><img src="img/spons/1.jpg" alt="Hero"><h4>GOLD</h4></a></li>
+						<li><a href="#"><img src="img/spons/2.jpg" alt="Bharat Petroleum"><h4>SILVER</h4></a></li>
+					</ul>
+
+					<ul>
+						<li><a href="#"><img src="img/spons/3.png" alt="Sports Keeda"><h4>INSPIRE</h4></a></li>
+						<li><a href="#"><img src="img/spons/4.png" alt="Euquotism"><h4>MERCHANDISE</h4></a></li>
+						<li><a href="#"><img src="img/spons/5.jpg" alt="THE WEEK"><h4>PRINT MEDIA</h4></a></li>
+						<li><a href="#"><img src="img/spons/6.jpg" alt="Buddh International"><h4>SPEED</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/spons/7.png" alt="EBAY"><h4>ONLINE SHOPPING</h4></a></li>
+						<li><a href="#"><img src="img/spons/8.jpg" alt="Brain Buxa"><h4>ONLINE KNOWLEDGE</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/spons/9.png" alt="Radio Mirchi"><h4>RADIO</h4></a></li>
+						<li><a href="#"><img src="img/spons/10.png" alt="TechZone"><h4>SMS</h4></a></li>
+						<li><a href="#"><img src="img/spons/11.jpg" alt="VODAFONE"><h4>NETWORK</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/spons/12.jpg" alt="Spalding"><h4>SPORTS-WEAR</h4></a></li>
+						<li><a href="#"><img src="img/spons/13.jpg" alt="Adidas"><h4>SPORTS-WEAR</h4></a></li>
+						<li><a href="#"><img src="img/spons/14.jpg" alt="Crocs"><h4>COMFORT</h4></a></li>
+						<li><a href="#"><img src="img/spons/15.png" alt="Calvin Klein"><h4>TIMEKEEPER</h4></a></li>
+					</ul>
+					<ul>
+						<li><a href="#"><img src="img/spons/16.png" alt="Mozilla"><h4>MARATHON</h4></a></li>
+						<li><a href="#"><img src="img/spons/17.jpg" alt="PEPSI"><h4>DRINKS</h4></a></li>
+					</ul>
+
+
+					<nav id="spons">
+						<div style="overflow:hidden;    margin-top: -5px;"><div id="tp"  style="width: 250%;position: relative;">
+							<a href="#" id="sn1" >PREMIUM</a>
+							<a href="#" id="sn2" >PARTNERS</a>
+							<a href="#" id="sn3" >ONLINE</a>
+							<a href="#" id="sn4" >MEDIA</a>
+							<a href="#" id="sn5" >SPORTS</a>
+							<a href="#" id="sn5" >FOOD & MARATHON</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 	</div>
 
-	<img id="logo" src="images/bosm logo.png" />
-	<div id="notify-btn">
-		<img id="bellnotify" src="images/bell.png"/>
-		<a id="notify-toggle" class="active" href="#">NOTIFICATIONS</a>
-	</div>
-	<div id="checkpos"></div>
+
+	<div id="contacts">
+
+		<div id="reach" >
+			<!--<p><iframe src="http://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.371087,75.591516&amp;spn=0.030209,0.051413&amp;z=14&amp;iwloc=lyrftr:m,2286371793580034125,28.364082,75.586946&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="600" height="300" style="margin:0;width:100%;"></iframe><br></p>-->
+			<div id="map" style=" width: 100%; height: 400px;"></div>
+		</div>
+
+		<div class="divtitle headingstyle" style="color:#555;">CONTACTS</div>
+		<div id="contact_Outcont">
+			<div class="contact_grp">
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Sports Secretary</b><br></span>
+						Shambhavi Mehrotra<br>
+						+91-8290900449<br>
+						shambhavi@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Govinda Nathani<br>
+						+91-8503857881<br>
+						govinda@bits-bosm.org
+					</div>
+				</div>
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Amolak Singh<br>
+						+91-9772234241<br>
+						amolak@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Akshat Dubey<br>
+						+91-9462181899<br>
+						akshat@bits-bosm.org
+					</div>
+				</div>
+			</div>
+			<div class="contact_grp">
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Correspondence, <br>Registration and Invites<br></b></span>
+						Vinit Bhat<br>
+						+91-9928086307<br>
+						pcr@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Scheduling and Events</b><br></span>
+						Neil Dave<br>
+						+91-9772211599 <br>
+						controlz@bits-bosm.org
+					</div>
+				</div>
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Reception and<br> Accommodation</b><br></span>
+						Basudev Choudhury<br>
+						+91-9929082070<br>
+						recnacc@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Sponsorship and<br> Marketing</b><br></span>
+						Vishesh Sharma<br>
+						+91-7728807829<br>
+						vishesh@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Website Related Queries</b><br></span>
+						webmaster@bits-bosm.org
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-	<div id="landing" class= "cover">  
 		<div id="socialcontainer">
 			<a href="http://www.youtube.com/user/bitsbosm" target="_blank">
 				<div class = "socialicon" id="yt">
-					<img src="images/youtube.png">
-				</div></a>
-				<a href="https://twitter.com/BOSM_BITSPilani" target="_blank">
-					<div class = "socialicon" id="tw">
-						<img src="images/twitter.png">
-					</div></a>
-					<a href="http://www.facebook.com/bosmbitspilani" target="_blank">
-						<div class = "socialicon" id="fb">
-							<img src="images/facebook.png">
-						</div></a>
-						<a href="http://en.wikipedia.org/wiki/BOSM_(festival)" target="_blank">
-							<div class = "socialicon" id="wiki">
-								<img src="images/wiki.png">
-							</div></a>
-							<a href="http://hpconline-bits.weebly.com/" target="_blank">
-								<div class = "socialicon" id="hpc">
-									<img src="images/bloghpc.png">
-								</div></a>
-								<a href="http://bits-bosm.org/blogs/english/" target="_blank">
-									<div class = "socialicon" id="epc">
-										<img src="images/blogepc.png">
-									</div></a>
-								</div>
+					<img src="img/youtube.png">
+				</div>
+			</a>
+			<a href="https://twitter.com/BOSM_BITSPilani" target="_blank">
+				<div class = "socialicon" id="tw">
+					<img src="img/twitter.png">
+				</div>
+			</a>
+			<a href="http://www.facebook.com/bosmbitspilani" target="_blank">
+				<div class = "socialicon" id="fb">
+					<img src="img/facebook.png">
+				</div>
+			</a>
+			<a href="http://en.wikipedia.org/wiki/BOSM_(festival)" target="_blank">
+				<div class = "socialicon" id="wiki">
+					<img src="img/wiki.png">
+				</div>
+			</a>
+			<a href="http://hpconline-bits.weebly.com/" target="_blank">
+				<div class = "socialicon" id="hpc">
+					<img src="img/hpc.svg"  style="height:40px;width:40px;border-radius:20px;" />
+				</div>
+			</a>
+			<a href="http://bits-bosm.org/blogs/english/" target="_blank">
+				<div class = "socialicon" id="epc">
+					<img src="img/epc.svg" style="height:40px;width:40px;border-radius:20px;" />
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript">
+		$(".boxes").click(function()
+		{
+			$("#eoverlay").fadeIn(500);
+			$("#eexit").fadeIn(500);
+		});    
+
+		var height = $(".boxes").height() - 15;
+		var width = $(".boxes").width() - 15; 
+		var flag = 1;
+
+		if(flag == 1)
+		{
+			$(".boxes").mouseover
+			(function funcslidei(element1, element2)
+			{   
+				if($(this).attr('id') == "bx1"){element1 = bx1; element2 = panel1;}
+				else if($(this).attr('id') == "bx2"){element1 = bx2; element2 = panel2;}
+				else if($(this).attr('id') == "bx3"){element1 = bx3; element2 = panel3;}
+				else if($(this).attr('id') == "bx4"){element1 = bx4; element2 = panel4;}
+				else if($(this).attr('id') == "bx5"){element1 = bx5; element2 = panel5;}
+				else if($(this).attr('id') == "bx6"){element1 = bx6; element2 = panel6;}
+				else if($(this).attr('id') == "bx7"){element1 = bx7; element2 = panel7;}
+				else if($(this).attr('id') == "bx8"){element1 = bx8; element2 = panel8;}
+				else if($(this).attr('id') == "bx9"){element1 = bx9; element2 = panel9;}
+				else if($(this).attr('id') == "bx10"){element1 = bx10; element2 = panel10;}
+				else if($(this).attr('id') == "bx11"){element1 = bx11; element2 = panel11;}
+				else if($(this).attr('id') == "bx12"){element1 = bx12; element2 = panel12;}
+				else if($(this).attr('id') == "bx13"){element1 = bx13; element2 = panel13;}
+				else if($(this).attr('id') == "bx14"){element1 = bx14; element2 = panel14;}
+				else if($(this).attr('id') == "bx15"){element1 = bx15; element2 = panel15;}
+				else if($(this).attr('id') == "bx16"){element1 = bx16; element2 = panel16;}
+				else if($(this).attr('id') == "bx17"){element1 = bx17; element2 = panel17;}
+				else if($(this).attr('id') == "bx18"){element1 = bx18; element2 = panel18;}
+				var x = event.clientX;
+				var y = event.clientY;
+
+				var m = $(element1);
+				var o = $(element2).attr('id');
+				var n = m.position();
+				var eTop = $("#badabox").offset().top;
+				var eLeft = $("#badabox").offset().left;
+				var tt = eTop - $(window).scrollTop();
+				var tl = eLeft - $(window).scrollLeft();
+
+				a = n.top + 15 + tt;
+
+				b = n.left + 15 + tl;
+
+				c = n.left + width + tl;
+
+				d = n.top + height + tt;
+
+
+
+				if(y<a)
+				{
+					document.getElementById(o).className = "slideitb";
+				}
+				else if(x<b)
+				{
+					document.getElementById(o).className = "slideilr";
+				}
+				else if(y>d)
+				{
+					document.getElementById(o).className = "slideibt";
+				}
+				else if(x>c)
+				{
+					document.getElementById(o).className = "slideirl";
+				}
+
+			});
+	flag = 0;
+}
+if(flag == 0)
+{
+	$(".boxes").mouseout
+	(function funcslidef(element1, element2)
+		{   if($(this).attr('id') == "bx1"){element1 = bx1; element2 = panel1;}
+		else if($(this).attr('id') == "bx2"){element1 = bx2; element2 = panel2;}
+		else if($(this).attr('id') == "bx3"){element1 = bx3; element2 = panel3;}
+		else if($(this).attr('id') == "bx4"){element1 = bx4; element2 = panel4;}
+		else if($(this).attr('id') == "bx5"){element1 = bx5; element2 = panel5;}
+		else if($(this).attr('id') == "bx6"){element1 = bx6; element2 = panel6;}
+		else if($(this).attr('id') == "bx7"){element1 = bx7; element2 = panel7;}
+		else if($(this).attr('id') == "bx8"){element1 = bx8; element2 = panel8;}
+		else if($(this).attr('id') == "bx9"){element1 = bx9; element2 = panel9;}
+		else if($(this).attr('id') == "bx10"){element1 = bx10; element2 = panel10;}
+		else if($(this).attr('id') == "bx11"){element1 = bx11; element2 = panel11;}
+		else if($(this).attr('id') == "bx12"){element1 = bx12; element2 = panel12;}
+		else if($(this).attr('id') == "bx13"){element1 = bx13; element2 = panel13;}
+		else if($(this).attr('id') == "bx14"){element1 = bx14; element2 = panel14;}
+		else if($(this).attr('id') == "bx15"){element1 = bx15; element2 = panel15;}
+		else if($(this).attr('id') == "bx16"){element1 = bx16; element2 = panel16;}
+		else if($(this).attr('id') == "bx17"){element1 = bx17; element2 = panel17;}
+		else if($(this).attr('id') == "bx18"){element1 = bx18; element2 = panel18;}
+		var x = event.clientX;
+		var y = event.clientY;
+
+		var m = $(element1);
+		var o = $(element2).attr('id');
+		var n = m.position();
+		var eTop = $("#badabox").offset().top;
+		var eLeft = $("#badabox").offset().left;
+		var tt = eTop - $(window).scrollTop();
+		var tl = eLeft - $(window).scrollLeft();
+
+		a = n.top + tt;
+
+		b = n.left + tl;
+
+		c = n.left + width + tl + 15;
+
+		d = n.top + height + tt + 15;
+
+
+
+		if(y>d)
+		{
+			document.getElementById(o).className = "slideftb";
+		}
+		else if(x>c)
+		{
+			document.getElementById(o).className = "slideflr";
+		}
+		else if(y<a)
+		{
+			document.getElementById(o).className = "slidefbt";
+		}
+		else if(x<b)
+		{
+			document.getElementById(o).className = "slidefrl";
+		}
+	});
+	flag = 1;
+}
+$("#eexit").click(function(){
+	document.getElementById("eoverlay").style.display= "none"; 
+	document.getElementById("eexit").style.display= "none"; 
+	$("#badabox").animate({height: "450px"}, 200, "swing");
+	$(".boxes").animate({height: "146px"}, 200, "swing");
+	$("#bx1, #bx2, #bx3, #bx4, #bx5, #bx6").animate({top: "0px"},200,"swing");
+	$("#bx7, #bx8, #bx9, #bx10, #bx11, #bx12").animate({top: "150px"},200,"swing");
+	$("#bx13, #bx14, #bx15, #bx16, #bx17, #bx18").animate({top: "300px"},200,"swing");
+	$("#eventstitle").css("display","block");
+	$("#eventstitle").animate({width: "200px"},200, "swing");
+	$("#rightarr, #leftarr").css("display","block");
+}
+);
+
+function loadXMLDoc()
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	    {// code for IE7+, Firefox, Chrome, Opera, Safari
+	    	xmlhttp=new XMLHttpRequest();
+	    }
+	    else
+	    {// code for IE6, IE5
+	    	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	    }
+	    xmlhttp.onreadystatechange=function()
+	    {
+	    	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    	{
+	    		document.getElementById("eoverlay").innerHTML=xmlhttp.responseText;
+	    	}
+	    }
+	    xmlhttp.open("GET","http://bits-bosm.org/2015/event/1/",true);
+	    xmlhttp.send();
+
+	    $("#badabox").animate({height: "0px"}, 300, "swing");
+	    $(".boxes").animate({height: "0px",top: "-300px"}, 300, "swing");
+	    $("#eventstitle").css("display","none");
+	};
 
-								<div id="message">
-									<a id="x">x</a>
-									<h3>Ouch . . . That's not good.</h3>
-									<p>Recently, your account has been lost due to unknown causes. Assumptions have been made, but overall it has been confirmed that your account and all information associated with it (including your Social Security Number and Birth Certificate) has vanished. We are truly sorry, but do hope you choose us again for all your security needs!</p>
-								</div>
-
-								<button id="click" class="hidden">Your notifications!
-								</button>
-							</div>
-
-							<div id="about" class= "cover">
-								<!--Anubhav<img src="./images/triangles.png" id="triangles">-->
-								<div class="logo">
-									<img src="./images/LOGO.png" id="logoaboutus">
-								</div>
-								<div id="about_left">
-									<!--Anubhav--><div class="headingstyle" id="about_heading">About BOSM</div>
-									<div class="text" id="about_text">
-										<p>"Courage is not the absence of fear. It is being afraid but being able to control that fear so you are able to perform at your highest ability. That's what makes a champion."</p>
-										<p>Because champions rise, champions fall, rise again, win it all.</p>
-										<p>It is not about winning, it is about taking part and becoming your own potential.</p>
-										<p>The BITS Open Sports Meet, or BOSM, as all know it, is one of the largest student managed Sports fests of the country. The four-day festival encompasses everything about sports.Aimed at providing a platform to colleges
-											from all over India to showcase their talents, promoting healthy competition, it gives attendees an opportunity to take part in a variety of sports and events. With the last year.s edition witnessing phenomenal
-											participation from colleges both from India and abroad, the 29th edition guarantees excitement well supplemented by floodlit matches in the evening and the unbridled enthusiasm of the crowds for highly competitive track and
-											off-track events, in the true  spirit of sportsmanship and camaraderie.</p>
-											<p>18th September - 22nd September.
-												BOSM 2015.</p>
-												<p>Come, battle it out, with grit and guts, in pursuit of glory.</p>
-                    <!--
-                    <p>Pulsating hearts,keeping time with the dribbling of a ball.
-                     The alternating hush and roar of the crowd,as their champions 
-                     fight for glory . The signs are clear - BOSM is here.</p>-->
-                 </br>
-             </div>
-         </div>
-     </div>
-     <div id="mascot" class= "cover">
-
-     	<div id="mascot_right">
-     		<div class="headingstyle" id="mascot_heading">Baxter, The Mascot</div>
-     		<div class="text" id="mascot_text">
-     			<p>Every festival needs a mascot symbol of the entire event. when it comes to BOSM, look no further than Baxter, the Desert Eagle. Officila mascot of the fest since 2013, Baxter epitomizes the virtues of strength, perseverance, endurance and the spirit of sportsmanship, providing a unique avenue for potential parters to interact with the paticipants and the audience at a more personal level.</p>
-     		</br>
-     	</div>
-     </div>
-     <div class="mascot_logo">
-     	<img src="./images/MASCOT.png" id="logomascot">
-     </div>
-
-
- </div>
-
- <div id="events" class="cover">
- 	<div class="divtitle headingstyle" >EVENTS</div> 
- 	<div id="badabox">
- 		<div onmouseover="funcslidei(bx1, panel1)" onmouseout="funcslidef(bx1, panel1)" onclick="loadXMLDoc()" class="boxes" id = "bx1">
- 			<img src="bosm events/ath.png" id="e1" class="evpic">
-
- 			<div id="panel1">Athletics</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx2, panel2)" onmouseout="funcslidef(bx2, panel2)" onclick="loadXMLDoc()" class="boxes" id = "bx2">
- 			<img src="bosm events/badmi.png" id="e2" class="evpic">
-
- 			<div id="panel2">Badminton</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx3, panel3)" onmouseout="funcslidef(bx3, panel3)" onclick="loadXMLDoc()" class="boxes" id = "bx3">
- 			<img src="bosm events/bb.png" id="e3" class="evpic">
-
- 			<div id="panel3">Basketball</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx4, panel4)" onmouseout="funcslidef(bx4, panel4)" onclick="loadXMLDoc()" class="boxes" id = "bx4">
- 			<img src="bosm events/bodybui.png" id="e4" class="evpic">
- 			<div id="panel4">Bodybuilding</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx5, panel5)" onmouseout="funcslidef(bx5, panel5)" onclick="loadXMLDoc()" class="boxes" id = "bx5">
- 			<img src="bosm events/carrom.png" id="e5" class="evpic">
-
- 			<div id="panel5">Carrom</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx6, panel6)" onmouseout="funcslidef(bx6, panel6)" onclick="loadXMLDoc()" class="boxes" id = "bx6">
- 			<img src="bosm events/che.png" id="e6" class="evpic">
-
- 			<div id="panel6">Chess</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx7, panel7)" onmouseout="funcslidef(bx7, panel7)" onclick="loadXMLDoc()" class="boxes" id = "bx7">
- 			<img src="bosm events/cric.png" id="e7" class="evpic">
-
- 			<div id="panel7">Cricket</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx8, panel8)" onmouseout="funcslidef(bx8, panel8)" onclick="loadXMLDoc()" class="boxes" id = "bx8">
- 			<img src="bosm events/foot.png" id="e8" class="evpic">
-
- 			<div id="panel8">Football</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx9, panel9)" onmouseout="funcslidef(bx9, panel9)" onclick="loadXMLDoc()" class="boxes" id = "bx9">
- 			<img src="bosm events/hock.png" id="e9" class="evpic">
-
- 			<div id="panel9">Hockey</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx10, panel10)" onmouseout="funcslidef(bx10, panel10)" onclick="loadXMLDoc()" class="boxes" id = "bx10">
- 			<img src="bosm events/mis.png" id="e10" class="evpic">
-
- 			<div id="panel10">Miscellaneous</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx11, panel11)" onmouseout="funcslidef(bx11, panel11)" onclick="loadXMLDoc()" class="boxes" id = "bx11">
- 			<img src="bosm events/onli.png" id="e11" class="evpic">
-
- 			<div id="panel11">Online</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx12, panel12)" onmouseout="funcslidef(bx12, panel12)" onclick="loadXMLDoc()" class="boxes" id = "bx12">
- 			<img src="bosm events/power.png" id="e12" class="evpic">
-
- 			<div id="panel12">Weight lifting</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx13, panel13)" onmouseout="funcslidef(bx13, panel13)" onclick="loadXMLDoc()" class="boxes" id = "bx13">
- 			<img src="bosm events/squa.png" id="e13" class="evpic">
-
- 			<div id="panel13">Squash</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx14, panel14)" onmouseout="funcslidef(bx14, panel14)" onclick="loadXMLDoc()" class="boxes" id = "bx14">
- 			<img src="bosm events/swim.png" id="e14" class="evpic">
-
- 			<div id="panel14">Swimming</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx15, panel15)" onmouseout="funcslidef(bx15, panel15)" onclick="loadXMLDoc()" class="boxes" id = "bx15">
- 			<img src="bosm events/taek.png" id="e15" class="evpic">
-
- 			<div id="panel15">Taekwondo</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx16, panel16)" onmouseout="funcslidef(bx16, panel16)" onclick="loadXMLDoc()" class="boxes" id = "bx16">
- 			<img src="bosm events/tenn.png" id="e16" class="evpic">
-
- 			<div id="panel16">Tennis</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx17, panel17)" onmouseout="funcslidef(bx17, panel17)" onclick="loadXMLDoc()" class="boxes" id = "bx17">
- 			<img src="bosm events/tt.png" id="e17" class="evpic">
-
- 			<div id="panel17">Table tennis</div>
- 		</div>
- 		<div onmouseover="funcslidei(bx18, panel18)" onmouseout="funcslidef(bx18, panel18)" onclick="loadXMLDoc()" class="boxes" id = "bx18">
- 			<img src="bosm events/volley.png" id="e18" class="evpic">
-
- 			<div id="panel18">Volleyball</div>
- 		</div>
- 		<div id="rightarr"></div>
- 		<div id="leftarr"></div>
-
- 	</div>
- 	<div id="eoverlay"></div>
- 	<div id="eexit"></div>          
- </div> 
-
-
- <div id="yodh" class= "cover"><!--<img id="yodh_image" src="./images/yodh1.png">-->
- 	<div class="divtitle headingstyle" style="color:#c52f31;">YODH</div>
-
- 	<div id="yodh_panel">
- 		<div class="text" id="yodh_content">
- 			<p>More Than Just A Game..</p>
- 			<p>&ldquo;Do you know what my favorite part of game is? The opportunity to play&ldquo;</p>
- 			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Mike Singletary</p>
- 			<p>How many kids in India actually get a chance to experience this?</p>
- 			<p>Shockingly, in India , 43.48% of schools don&rsquo;t have recreational facilities for their kids. Rajasthan fares even worse, with&nbsp; 51.61% of the schools having no playgrounds. This BOSM, Nirmaan-Pilani presents a unique opportunity for all kids to showcase their sporting talent.</p>
- 			<p>YODH 2014 is a two-day inter-school sports event. One of the most brilliant initiatives taken by BITS. It is an effort to give a chance to students to develop their interest in sports, an effort to create some opportunities for talented, deserving students.</p>
- 			<p>This sports extravaganza, with numerous sporting events like athletics, chess, cricket, badminton and many more events,&nbsp; will witness participation from more than 200 students of classes 6<sup>th</sup> to 10<sup>th</sup>.&nbsp; 10+ schools from in and around Pilani will be participating in the event. These schools have only one thing in common: no playground facilities, no dedicated sports teachers, lack of knowledge about the importance of sports in the personality building of a student, yet a burning desire to overcome these difficulties and emerge as winners. Yodh is an enterprise from our side to provide a platform to let the school authorities as well as students discover their hidden potential, which has remained untapped all these years.</p><br>
- 			<p>Date: </p>
- 			<p>Time:</p>
- 			<p>Venue: GymG, SAC and MedC grounds</p><br>
- 			<p>For further details contact:</p>
- 			<p></p>
- 			<p></p>
- 			<p>&nbsp;</p>
-
-
- 		</div>
- 	</div>
-
-
-
- </div>
-
-
- <div id="gallery" class= "cover">
- 	<div class="divtitle headingstyle">GALLERY</div>
- 	<div id="gbadabox">
- 		<div id="g1" class="frames fupper" style="background-image:url(images/gallery/13.jpg); background-size:140% 100%;" onclick="gpopup(1)"></div>                            
- 		<div id="g2" class="frames fupper" style="background-image:url(images/gallery/14.jpg); background-size:140% 100%;" onclick="gpopup(2)"></div>
- 		<div id="g3" class="frames fupper" style="background-image:url(images/gallery/15.jpg); background-size:140% 100%;" onclick="gpopup(3)"></div>
- 		<div id="g4" class="frames fupper" style="background-image:url(images/gallery/4.jpg); background-size:140% 100%;" onclick="gpopup(4)"></div>
- 		<div id="g5" class="frames fupper" style="background-image:url(images/gallery/5.jpg); background-size:140% 100%;" onclick="gpopup(5)"></div>
- 		<div id="g6" class="frames fupper" style="background-image:url(images/gallery/6.jpg); background-size:140% 100%;" onclick="gpopup(6)"></div>
- 		<div id="g7" class="frames flower" style="background-image:url(images/gallery/7.jpg); background-size:140% 100%;" onclick="gpopup(7)"></div>
- 		<div id="g8" class="frames flower" style="background-image:url(images/gallery/8.jpg); background-size:140% 100%;" onclick="gpopup(8)"></div>
- 		<div id="g9" class="frames flower" style="background-image:url(images/gallery/9.jpg); background-size:140% 100%;" onclick="gpopup(9)"></div>
- 		<div id="g10" class="frames flower" style="background-image:url(images/gallery/10.jpg); background-size:140% 100%;" onclick="gpopup(10)"></div>
- 		<div id="g11" class="frames flower" style="background-image:url(images/gallery/11.jpg); background-size:140% 100%;" onclick="gpopup(11)"></div>
- 		<div id="g12" class="frames flower" style="background-image:url(images/gallery/12.jpg); background-size:140% 100%;" onclick="gpopup(12)"></div>
-
- 	</div>
- 	<div id="goverlay"></div>
- 	<div id="bigpiccont"><img id="bigpic" src=""></div>
- 	<span id="gexit"></span>
- 	<span id="next"></span>
- 	<span id="previous"></span>
-
- </div>
- <div id="sponsors" class= "cover">
- 	<div class="divtitle headingstyle" id="sponstitle">OUR SPONSORS</div>
- 	<div class="container">	
- 		<div class="main">
- 			<div id="mi-slider" class="mi-slider">
- 				<ul>
- 					<li><a href="#"><img src="images/1.jpg" alt="img01"><h4>Boots</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/5.jpg" alt="img05"><h4>Belts</h4></a></li>
- 					<li><a href="#"><img src="images/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/9.jpg" alt="img09"><h4>Casual</h4></a></li>
- 					<li><a href="#"><img src="images/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
- 					<li><a href="#"><img src="images/11.jpg" alt="img11"><h4>Sport</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
- 					<li><a href="#"><img src="images/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
- 					<li><a href="#"><img src="images/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
- 					<li><a href="#"><img src="images/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/1.jpg" alt="img01"><h4>Boots</h4></a></li>
- 					<li><a href="#"><img src="images/2.jpg" alt="img02"><h4>Oxfords</h4></a></li>
- 					<li><a href="#"><img src="images/3.jpg" alt="img03"><h4>Loafers</h4></a></li>
- 					<li><a href="#"><img src="images/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
- 					<li><a href="#"><img src="images/4.jpg" alt="img04"><h4>Sneakers</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/5.jpg" alt="img05"><h4>Belts</h4></a></li>
- 					<li><a href="#"><img src="images/6.jpg" alt="img06"><h4>Hats &amp; Caps</h4></a></li>
- 					<li><a href="#"><img src="images/7.jpg" alt="img07"><h4>Sunglasses</h4></a></li>
- 					<li><a href="#"><img src="images/8.jpg" alt="img08"><h4>Scarves</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/9.jpg" alt="img09"><h4>Casual</h4></a></li>
- 					<li><a href="#"><img src="images/10.jpg" alt="img10"><h4>Luxury</h4></a></li>
- 					<li><a href="#"><img src="images/11.jpg" alt="img11"><h4>Sport</h4></a></li>
- 				</ul>
- 				<ul>
- 					<li><a href="#"><img src="images/12.jpg" alt="img12"><h4>Carry-Ons</h4></a></li>
- 					<li><a href="#"><img src="images/13.jpg" alt="img13"><h4>Duffel Bags</h4></a></li>
- 					<li><a href="#"><img src="images/14.jpg" alt="img14"><h4>Laptop Bags</h4></a></li>
- 					<li><a href="#"><img src="images/15.jpg" alt="img15"><h4>Briefcases</h4></a></li>
- 				</ul>
- 				<nav>
- 					<a href="#">Shoes</a>
- 					<a href="#">Accessories</a>
- 					<a href="#">Watches</a>
- 					<a href="#">Bags</a>
- 					<a href="#">Shoes</a>
- 					<a href="#">Accessories</a>
- 					<a href="#">Watches</a>
- 					<a href="#">Bags</a>
- 				</nav>
- 			</div>
- 		</div>
- 	</div>
- </div>
-
-
- <div  class= "cover" id="contacts">
- 	<div id="reach" >
- 		<!--<p><iframe src="http://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.371087,75.591516&amp;spn=0.030209,0.051413&amp;z=14&amp;iwloc=lyrftr:m,2286371793580034125,28.364082,75.586946&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="600" height="300" style="margin:0;width:100%;"></iframe><br></p>-->
- 		<div id="map" style=" width: 100%; height: 400px;"></div>
- 	</div>
- 	<div class="divtitle headingstyle" id="conttitle" style="position:relative;margin-top:30px;margin-bottom:5px;top:0px;">CONTACTS</div>
-
- 	<center>
- 		<div style="margin-left:auto;margin-right:auto;display:inline-table;">
- 			<ul>
- 				<li class="contact">
- 					<b><span class="contact-type">Sports Secretary</span></b><br />
- 					Shambhavi Mehrotra<br />
- 					+91-8290900449<br />
- 					shambhavi@bits-bosm.org
- 				</li>
- 				<li class="contact">
- 					<b><span class="contact-type">Joint Sports Secretary</span></b><br />
- 					Govinda Nathani<br />
- 					+91-8503857881<br />
- 					govinda@bits-bosm.org
- 				</li>
- 				<li class="contact">
- 					<b><span class="contact-type">Joint Sports Secretary</span></b><br />
- 					Amolak Singh<br />
- 					+91-9772234241<br />
- 					amolak@bits-bosm.org
- 				</li>
- 				<li class="contact">
-
- 					<b><span class="contact-type">Joint Sports Secretary</span></b><br />
- 					Akshat Dubey<br />
- 					+91-9462181899<br />
- 					akshat@bits-bosm.org
- 				</li>
- 			</ul>
-
- 		</div>
- 	</center>
-
- 	<div style="margin-right:auto;margin-left:auto;margin-top:10px">
- 		<ul>
- 			<li class="contact div2">
- 				<b><span class="contact-type">For Correspondence, Registration and Invites</span></b><br />
- 				Vinit Bhat<br />
- 				+91-9928086307<br />
- 				pcr@bits-bosm.org
- 			</li>
-
- 			<li class="contact div2">
- 				<b><span class="contact-type">For Scheduling and Events</span></b><br />
- 				Neil Dave<br />
- 				+91-9772211599 <br />
- 				controlz@bits-bosm.org
- 			</li>
-
- 			<li class="contact div2">
- 				<b><span class="contact-type">For Reception and Accommodation:</span></b><br />
- 				Basudev Choudhury<br />
- 				+91-9929082070<br />
- 				recnacc@bits-bosm.org
- 			</li>
- 			<li class="contact div2">
- 				<b><span class="contact-type">For Sponsorship and Marketing</span></b><br />
- 				Vishesh Sharma<br />
- 				+91-7728807829<br />
- 				vishesh@bits-bosm.org
- 			</li>
- 			<li class="contact div2">
- 				<b><span class="contact-type">For Website Related Queries</span></b><br />
- 				webmaster@bits-bosm.org
- 			</li>
- 		</ul>
- 	</div>
- </div>
-
-
-
- <div id="navbar">
- 	<div class="navitem"><div class="navback"></div><a href="#about">ABOUT</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#mascot">MASCOT</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#events">EVENTS</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#yodh">YODH</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#gallery">GALLERY</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#sponsors">SPONSORS</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#conttitle">CONTACTS</a></div>
- </div>
-
- <div id="notify-bar">
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 1</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 2</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 3</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 4</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 5</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 6</a></div>
- 	<div class="navitem"><div class="navback"></div><a href="#">Notification 7</a></div>
- </div>
-
-
- <!-- **********************************************Assigning id to gallery images to use as variables in script****************************************-->
- <img id="gimg1" src="images/gallery/13.jpg?<?PHP echo uniqid(); ?>" style="display:none">
- <img id="gimg2" src="images/gallery/14.jpg" style="display:none">
- <img id="gimg3" src="images/gallery/15.jpg" style="display:none">
- <img id="gimg4" src="images/gallery/4.jpg" style="display:none">
- <img id="gimg5" src="images/gallery/5.jpg" style="display:none">
- <img id="gimg6" src="images/gallery/6.jpg" style="display:none">
- <img id="gimg7" src="images/gallery/7.jpg" style="display:none">
- <img id="gimg8" src="images/gallery/8.jpg" style="display:none">
- <img id="gimg9" src="images/gallery/9.jpg" style="display:none">
- <img id="gimg10" src="images/gallery/10.jpg" style="display:none">
- <img id="gimg11" src="images/gallery/11.jpg" style="display:none">
- <img id="gimg12" src="images/gallery/12.jpg" style="display:none">
-
- <!--***************************************************************************************************************************************************-->
-
-
- <script type="text/javascript" src="js/main.js">
- </script>
-
- <script type="text/javascript">
- 	var cw = $('.frames').width();
- 	$('.frames').css({'height':cw+'px'});
-
- 	var ch = $('.frames').height();
- 	var kk = ch + 14;
- 	$('.flower').css({'top':kk + 'px'});
-
- 	$('#gbadabox').css({'height':kk + kk +'px'});
- 	var jj = $(".cover").height();
- 	var jjj = jj*0.5;
- 	$('#gbadabox').css({'top': 32.5 + jjj - kk +'px'});
-
- </script>
- <script type="text/javascript">
- 	$(".boxes").click(function()
- 	{
- 		$("#eoverlay").fadeIn(500);
- 		$("#eexit").fadeIn(500);
- 	});
- </script>
- <script type="text/javascript">      
-
- 	var height = $(".boxes").height() - 20;
- 	var width = $(".boxes").width() - 20; 
-
- 	function funcslidef(element1, element2)
- 	{  
- 		var x = event.clientX;
- 		var y = event.clientY;
-
- 		var m = $(element1);
- 		var o = $(element2).attr('id');
- 		var n = m.position();
- 		var eTop = $("#badabox").offset().top;
- 		var eLeft = $("#badabox").offset().left;
- 		var tt = eTop - $(window).scrollTop();
- 		var tl = eLeft - $(window).scrollLeft();
-
- 		a = n.top + 20 + tt;
- 		b = n.left + 20 + tl;
- 		c = n.left + width + tl;
- 		d = n.top + height + tt;
-
- 		if(y>d)
- 		{
- 			document.getElementById(o).className = "slideftb";
- 		}
- 		else if(x>c)
- 		{
- 			document.getElementById(o).className = "slideflr";
- 		}
- 		else if(y<a)
- 		{
- 			document.getElementById(o).className = "slidefbt";
- 		}
- 		else if(x<b)
- 		{
- 			document.getElementById(o).className = "slidefrl";
- 		}
-
- 	};
-
-
- 	function funcslidei(element1, element2)
- 	{  
- 		var x = event.clientX;
- 		var y = event.clientY;
-
- 		var p = $(element1);
- 		var o = $(element2).attr('id');
- 		var q = p.position();     
- 		var eTop = $("#badabox").offset().top;
- 		var eLeft = $("#badabox").offset().left;
- 		var tt = eTop - $(window).scrollTop();
- 		var tl = eLeft - $(window).scrollLeft();
-
- 		u = q.top + 20 + tt;
- 		v = q.left + 20 + tl;
- 		r = q.left + width + tl;
- 		s = q.top + height + tt;
-
- 		if(y<u)
- 		{
- 			document.getElementById(o).className = "slideitb";
- 		}
- 		else if(x<v)
- 		{
- 			document.getElementById(o).className = "slideilr";
- 		}
- 		else if(y>s)
- 		{
- 			document.getElementById(o).className = "slideibt";
- 		}
- 		else if(x>r)
- 		{
- 			document.getElementById(o).className = "slideirl";
- 		}
- 	};
-
-
- </script>
-
- <script type="text/javascript">
- 	var x=0;
- 	var a =  document.getElementById("gimg1").src;
- 	var b =  document.getElementById("gimg2").src;
- 	var c =  document.getElementById("gimg3").src;
- 	var d =  document.getElementById("gimg4").src;
- 	var e =  document.getElementById("gimg5").src;
- 	var f =  document.getElementById("gimg6").src;
- 	var g =  document.getElementById("gimg7").src;
- 	var h =  document.getElementById("gimg8").src;
- 	var i =  document.getElementById("gimg9").src;
- 	var j =  document.getElementById("gimg10").src;
- 	var k =  document.getElementById("gimg11").src;
- 	var l =  document.getElementById("gimg12").src;
- 	function gpopup(y)
- 	{
- 		x=y;
-
-
- 		if(x==1)
- 		{         
- 			document.getElementById("bigpic").src= a;
- 		}
- 		if(x==2)
- 		{        
- 			document.getElementById("bigpic").src= b;        
- 		}
- 		if(x==3)
- 		{         
- 			document.getElementById("bigpic").src= c;        
- 		}
- 		if(x==4)
- 		{         
- 			document.getElementById("bigpic").src= d;        
- 		}
- 		if(x==5)
- 		{         
- 			document.getElementById("bigpic").src= e;        
- 		}
- 		if(x==6)
- 		{         
- 			document.getElementById("bigpic").src= f;
- 		}
- 		if(x==7)
- 		{         
- 			document.getElementById("bigpic").src= g;        
- 		}
- 		if(x==8)
- 		{         
- 			document.getElementById("bigpic").src= h;        
- 		}
- 		if(x==9)
- 		{         
- 			document.getElementById("bigpic").src= i;        
- 		}
- 		if(x==10)
- 		{         
- 			document.getElementById("bigpic").src= j;        
- 		}
- 		if(x==11)
- 		{         
- 			document.getElementById("bigpic").src= k;        
- 		}
- 		if(x==12)
- 		{         
- 			document.getElementById("bigpic").src= l;        
- 		}
- 		$("#goverlay").fadeIn(500);
- 		$("#bigpiccont").fadeIn(500);
- 		$("#previous").fadeIn(500);
- 		$("#next").fadeIn(500);
- 		$("#gexit").fadeIn(500);
- 	};
-
- 	$("#next").click(function(){
- 		if(x<13){x++; gpopup(x);}
-
- 	}
- 	);
- 	$("#next").click(function(){
- 		if(x==13){x = 0;}
- 		gpopup(x);      
- 	}
- 	);
- 	$("#previous").click(function(){
- 		if(x>0){x--; gpopup(x);}
-
- 	}
- 	);
- 	$("#previous").click(function(){
- 		if(x==0){x = 13;}
- 		gpopup(x);
- 	}
- 	);
- 	$("#gexit").click(function(){
- 		document.getElementById("goverlay").style.display= "none"; 
- 		document.getElementById("bigpiccont").style.display= "none"; 
- 		document.getElementById("gexit").style.display= "none"; 
- 		document.getElementById("next").style.display= "none";
- 		document.getElementById("previous").style.display= "none";
- 	}
- 	);
- 	$("#eexit").click(function(){
- 		document.getElementById("eoverlay").style.display= "none"; 
- 		document.getElementById("eexit").style.display= "none"; 
- 		$("#badabox").animate({height: "450px"}, 200, "swing");
- 		$(".boxes").animate({height: "146px"}, 200, "swing");
- 		$("#bx1, #bx2, #bx3, #bx4, #bx5, #bx6").animate({top: "0px"},200,"swing");
- 		$("#bx7, #bx8, #bx9, #bx10, #bx11, #bx12").animate({top: "150px"},200,"swing");
- 		$("#bx13, #bx14, #bx15, #bx16, #bx17, #bx18").animate({top: "300px"},200,"swing");
- 		$("#eventstitle").css("display","block");
- 		$("#eventstitle").animate({width: "200px"},200, "swing");
- 		$("#rightarr, #leftarr").css("display","block");
- 	}
- 	);
- </script>
- <script type="text/javascript">
- 	$("#rightarr").click(function()
- 	{
- 		$("#badabox").animate({left: "-100%"}, 500, "swing");     
-
- 	});
- 	$("#leftarr").click(function()
- 	{
- 		$("#badabox").animate({left: "0%"}, 500, "swing");      
- 	});
- </script>
- <script>
- 	function loadXMLDoc()
- 	{
- 		var xmlhttp;
- 		if (window.XMLHttpRequest)
-    {// code for IE7+, Firefox, Chrome, Opera, Safari
-    	xmlhttp=new XMLHttpRequest();
-    }
-    else
-    {// code for IE6, IE5
-    	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    xmlhttp.onreadystatechange=function()
-    {
-    	if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    	{
-    		document.getElementById("eoverlay").innerHTML=xmlhttp.responseText;
-    	}
-    }
-    xmlhttp.open("GET","http://bits-bosm.org/2015/event/1/",true);
-    xmlhttp.send();
-
-    $("#badabox").animate({height: "0px"}, 500, "swing");
-    $(".boxes").animate({height: "0px",top: "-200px"}, 500, "swing");
-    $("#rightarr, #leftarr, #eventstitle").css("display","none");
-};
 </script>
+
+
+<script type="text/javascript" src="js/glisse.js"></script>
+<script src="js/polyfills.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/jquery.catslider.js"></script>
+<script>
+	$(function() {
+
+		$( '#mi-slider' ).catslider();
+
+	});
+</script>
+<script type="text/javascript">
+	$("#spons > div > div > a").click(function(event){
+		event.preventDefault();
+		var elewid = $(this).width();
+		var mid = $('#spons').width();
+		mid = mid/2;
+		var leftpos = $(this).position().left;
+		var leftdivpos = $('#spons').offset().left;
+		var shift = mid -  leftpos  - 30 - (elewid/2) ;
+		$('#tp').animate({'left':shift},300);
+	});
+
+</script>	
 </body>
 </html>

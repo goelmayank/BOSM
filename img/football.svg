@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 2553 2545"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:none}
+    .fil0 {fill:#EBECEC}
+    .fil2 {fill:#434E50}
+    .fil1 {fill:#B2B3B3;fill-rule:nonzero}
+    .fil4 {fill:#2B2A29;fill-opacity:0.188235}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_719672604192">
+   <circle class="fil0" cx="1280" cy="1268" r="1268"/>
+   <g>
+    <polygon class="fil1" points="741,979 1305,662 1332,709 768,1026 "/>
+    <polygon class="fil1" points="873,2339 1306,2202 1399,2224 911,2379 "/>
+    <polygon class="fil1" points="1856,2208 1901,2378 1854,2390 1811,2226 "/>
+    <polygon class="fil1" points="2063,1754 2391,1465 2408,1515 2061,1819 "/>
+    <polygon class="fil1" points="1770,935 1789,1589 1742,1593 1721,924 "/>
+    <polygon class="fil1" points="2048,679 2421,1048 2404,1102 2069,783 "/>
+    <polygon class="fil1" points="1805,308 1891,160 1932,184 1842,337 "/>
+    <polygon class="fil1" points="908,163 1382,312 1317,356 871,215 "/>
+    <polygon class="fil1" points="406,845 504,373 551,388 452,860 "/>
+    <polygon class="fil1" points="182,1294 14,1330 0,1284 168,1247 "/>
+    <polygon class="fil1" points="766,1522 1330,1831 1302,1875 739,1566 "/>
+    <polygon class="fil1" points="455,1695 554,2141 508,2156 409,1710 "/>
+    <polygon class="fil2" points="1289,316 1286,703 1747,972 2098,773 1842,292 "/>
+    <path class="fil2" d="M399 358c151,-157 322,-253 532,-307l0 149c-156,29 -278,120 -404,218 -42,-20 -85,-40 -128,-60z"/>
+    <polygon class="fil2" points="429,803 782,987 779,1556 428,1739 148,1270 "/>
+    <path class="fil2" d="M1285 1836l480 -274 329 197 -252 490 -549 -18c0,0 -6,-397 -8,-395z"/>
+    <path class="fil2" d="M931 2491c-211,-52 -380,-151 -532,-306l129 -74c103,120 243,179 391,240 4,46 8,93 12,140z"/>
+    <path class="fil2" d="M2508 974c59,209 55,405 -6,614l-127 -76c53,-149 37,-300 17,-459 39,-26 78,-53 116,-79z"/>
+    <line class="fil3" x1="429" y1="803" x2="527" y2= "418" />
+    <line class="fil3" x1="931" y1="200" x2="1289" y2= "316" />
+    <line class="fil3" x1="782" y1="987" x2="1286" y2= "703" />
+    <line class="fil3" x1="428" y1="1739" x2="528" y2= "2111" />
+    <line class="fil3" x1="919" y1="2351" x2="1293" y2= "2231" />
+    <line class="fil3" x1="1747" y1="972" x2="1765" y2= "1562" />
+    <line class="fil3" x1="2094" y1="1759" x2="2375" y2= "1512" />
+    <line class="fil3" x1="2098" y1="773" x2="2392" y2= "1053" />
+    <line class="fil3" x1="1842" y1="292" x2="1912" y2= "172" />
+    <line class="fil3" x1="148" y1="1270" x2="6" y2= "1307" />
+    <line class="fil3" x1="1842" y1="2249" x2="1877" y2= "2384" />
+   </g>
+   <path class="fil4" d="M374 2149l1854 -1723c288,296 586,1079 -67,1755 -917,768 -1708,104 -1787,-32z"/>
+  </g>
+ </g>
+</svg>

@@ -14,7 +14,7 @@
 			// the categories (ul)
 			this.$categories = this.$el.children( 'ul' );
 			// the navigation
-			this.$navcategories = this.$el.find( 'nav > a' );
+			this.$navcategories = this.$el.find( 'nav > div > div > a' );
 			var animEndEventNames = {
 				'WebkitAnimation' : 'webkitAnimationEnd',
 				'OAnimation' : 'oAnimationEnd',
