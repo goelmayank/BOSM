@@ -14,7 +14,7 @@
 			// the categories (ul)
 			this.$categories = this.$el.children( 'ul' );
 			// the navigation
-			this.$navcategories = this.$el.find( 'nav > div > div > a' );
+			this.$navcategories = this.$el.find( '.spons_head' );
 			var animEndEventNames = {
 				'WebkitAnimation' : 'webkitAnimationEnd',
 				'OAnimation' : 'oAnimationEnd',
@@ -47,7 +47,7 @@
 
 			var self = this;
 			this.$navcategories.on( 'click.catslider', function() {
-				self.showCategory( $( this ).index() );
+				self.showCategory( ($( this ).index() -6) );
 				return false;
 			} );
 
