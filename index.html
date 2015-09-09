@@ -16,8 +16,8 @@
 	<meta name="rating" content="general">
 	<meta name="distribution" content="Global">
 	<meta name="revisit-after" content="2 days">
-	<meta property="og:title" content="BOSM 2015 | XXX International Sports Festival|BITS Pilani">
-	<meta property="og:site_name" content="BOSM Intro">
+	<meta property="og:title" content="BOSM 2015 | XXX International Sports Festival |BITS Pilani">
+	<meta property="og:site_name" content="BOSM 2015">
 	<meta property="og:url" content="http://www.bits-bosm.org/">
 	<meta property="og:description" content="With the last year's edition
 	witnessing phenomenal participation from colleges both from India and abroad,
@@ -46,7 +46,7 @@
 	
 	<script type="text/javascript" src="js/jquerypulse.js"></script>
 	<style>
-
+		
 		body>div{
 			position: relative;
 			min-height: 100%;
@@ -56,7 +56,7 @@
 	</style>
 
 </head>
-<body onload="loader()">
+<body onload="loader()"  onscroll='smd();'>
 	<div id ="loader">
 		<img  src="img/loading.gif" class="loading">
 	</div>
@@ -66,42 +66,50 @@
 		<img src="img/flood_light.png" class="fl_right"/>
 
 		<img src="img/landing_logo.jpg" id="classylogo">
+		<img src="img/landing_logo_col.png" id="classylogocol">
 
 		<div id="sticky_footer">
-			<img  src = "img/nav_bosm.svg" class="footer_bosm" />
+			<div id="tpt" style="cursor:pointer;">
+				<img  src = "img/logow.svg" class="footer_bosm" style="height: 35px;margin-top: 5px;margin-right: -5px;" />
+				<img  src = "img/nav_bosm.svg" class="footer_bosm" />
+			</div>
 			<img  src = "img/notif.svg" class="footer_notif" />
-			<a href="" target="_blank">
+			<a href="http://bits-bosm.org/2015/accounts/login/" target="_blank">
 				<img  src = "img/logintxt.svg" class="footer_logintxt" style="margin-left:-22px;padding-right:10px;" />
 				<img  src = "img/loginicon.svg" class="footer_loginicon"  />
 			</a>
-			<a href="" target="_blank">
+			<a href="http://bits-bosm.org/2015/accounts/register/" target="_blank">
 				<img  src = "img/regtxt.svg" class="footer_regtxt" style="margin-left:-25px; padding-right:10px;" />
 				<img  src = "img/regicon.svg" class="footer_regicon" />
-			</a>	
+			</a>
 
 			<div class="notifications">
 				<div class="toggle"></div>
 				<div class="messages">
-					<a href="#" class="message">Someone added you</a>
-					<a href="#" class="message">Someone added you</a>
-					<a href="#" class="message">Someone added you</a>
+					<ul>
+						<li class="message">Registration Started</li>
+						<li class="message">Event data updated</li>
+						<li class="message">Presenting: The F16s</li>
+					</ul>	
 				</div>
-			</div>
+			</div>	
 		</div>
 
+
 		<div class="component">
-			<!-- Start Nav Structure -->		
-			<img src="img/pointer.svg" id="pointer"/>	
+			<!-- Start Nav Structure -->
+			<span id ="menutxt" style="z-index: 175;bottom: 3.2em;padding-left: 0.8em;color: #192F07;font-size: 20px;font-family:'Open Sans';font-weight:600;">MENU</span>				
+			<img src="img/pointer.svg" id="pointer" class="flipv"/>	
 			<button class="cn-button" id="cn-button">
 				<img src="img/football.svg" /></button>
-
+				
 				<div class="cn-wrapper" id="cn-wrapper">
 					<ul>
 						<li><a href="#landing"><span class="ic">Home</span><span><img src="img/home.svg" style="width:20px;"/></span></a></li>
 						<li><a href="#about"><span class="ic">About</span><span><img src="img/about.svg" style="width:20px;"/></span></a></li>
 						<li><a href="#mascot"><span class="ic">Mascot</span><span><img src="img/mascot.svg" style="width:20px;"/></span></a></li>
 						<li><a href="#events"><span class="ic">Events</span><span><img src="img/events.svg" style="width:20px;"/></span></a></li>
-						<li><a href="#yodh"><span class="ic">Yodh</span><span><img src="img/yodh.svg" style="width:20px;"/></span></a></li>
+						<li><a href="#yodh"><span class="ic">ProfShow</span><span><img src="img/f16_icon.svg" style="width:20px;"/></span></a></li>
 						<li><a href="#gallery"><span class="ic">Gallery</span><span><img src="img/gallery.svg" style="width:20px;"/></span></a></li>
 						<li><a href="#sponsors"><span class="ic">Sponsors</span><span><img src="img/sponsors.svg" style="width:20px;"/></span></a></li>	
 						<li><a href="#contactus"><span class="ic">Contacts</span><span><img src="img/contacts.svg" style="width:20px;"/></span></a></li>
@@ -110,480 +118,488 @@
 			</div>		<!-- End of Nav Structure -->
 		</div>
 
-
+		
 		<div id="about">
 			<div class="adjust_mobile"></div>
 			<div class="inner_cont">
 				<div class="main_head box_sizing">
-					<b>ABOUT BOSM</b>
+					<b>BITS Open Sports Meet, 2015</b>
 				</div>
 				<div class="main_text box_sizing scroll_d">
-					<p>"Courage is not the absence of fear. It is being afraid but being able to control that fear so you are able to perform at your highest ability. That's what makes a champion."</p>
-					<p>Because champions rise, champions fall, rise again, win it all.</p>
-					<p>It is not about winning, it is about taking part and becoming your own potential.</p>
-					<p>The BITS Open Sports Meet, or BOSM, as all know it, is one of the largest student managed Sports fests of the country. The four-day festival encompasses everything about sports.Aimed at providing a platform to colleges from all over India to showcase their talents, promoting healthy competition, it gives attendees an opportunity to take part in a variety of sports and events. With the last year.s edition witnessing phenomenal participation from colleges both from India and abroad, the 29th edition guarantees excitement well supplemented by floodlit matches in the evening and the unbridled enthusiasm of the crowds for highly competitive track and off-track events, in the true  spirit of sportsmanship and camaraderie.</p>
-					<p>18th September - 22nd September. BOSM 2015.</p>
-					<p>Come, battle it out, with grit and guts, in pursuit of glory.</p>
-				</div>
-				<div id="about_img">
-					<img src="img/logo.svg">
-				</div>
+					<p>“You win some, you lose some, and some get rained out, but you gotta suit up for them all.”– J. Askenberg</p>
+					<p>The 30th edition of BOSM is here with a platform for you and your college to showcase your talents on the field. Brace yourselves for four days worth of floodlit matches, unbridled enthusiasm and heart-felt cheering. With last year’s phenomenal participation by colleges from all over India and abroad, BOSM 2015 promises to be bigger and better than its past incarnations.</p>
+					<p>Have the grit. Play your guts out. Take home the glory.</p> 
+					<p>18th September - 22nd September.</p>
+					<p>Keep your head in the game.</p>
+				</p>
+			</div>
+			<div id="about_img">
+				<img src="img/logo.svg">
 			</div>
 		</div>
-		<div id="mascot">
-			<div class="adjust_mobile"></div>
-			<div class="inner_cont">
-				<div class="main_head box_sizing">
-					<b>BAXTER, THE MASCOT</b>
-				</div>
-				<div class="main_text box_sizing scroll_d">
-					Every festival needs a mascot symbol of the entire event. when it comes to BOSM, look no further than Baxter, the Desert Eagle. Official mascot of the fest since 2013, Baxter epitomizes the virtues of strength, perseverance, endurance and the spirit of sportsmanship, providing a unique avenue for potential parters to interact with the paticipants and the audience at a more personal level.
-				</div>
-				<div id="mascot_img">
-					<img src="img/mascotbada.svg">
-				</div>
+	</div>
+	<div id="mascot">
+		<div class="adjust_mobile"></div>
+		<div class="inner_cont">
+			<div class="main_head box_sizing">
+				<b>Baxter- The Desert Eagle</b>
 			</div>
-		</div>
-		<div id="events">
-			<div class="divtitle headingstyle" id="eventstitle" style="color:#86553F;">EVENTS</div> 
-			<div id="badabox">
-				<div class="boxes">
-					<img src="bosm events/ath.svg" class="evpic">
-					<div>Athletics</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/bd.svg" class="evpic">
-					<div>Badminton</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/bski.svg" class="evpic">
-					<div>Basketball</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/body.svg" class="evpic">
-					<div>Bodybuilding</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/crm.svg" class="evpic">
-					<div>Carrom</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/che.svg" class="evpic">
-					<div>Chess</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/crc.svg" class="evpic">
-					<div>Cricket</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/sc.svg" class="evpic">
-					<div>Football</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/hok.svg" class="evpic">
-					<div>Hockey</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/mc.svg" class="evpic" style="height:40%;top:30%;">
-					<div>Miscellaneous</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/onl.svg" class="evpic">
-					<div>Online</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/wei.svg" class="evpic">
-					<div>Weight lifting</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/sq.svg" class="evpic">
-					<div>Squash</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/sw.svg" class="evpic" style="height:40%;top:30%;">
-					<div>Swimming</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/tw.svg" class="evpic">
-					<div>Taekwondo</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/ten.svg" class="evpic">
-					<div>Tennis</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/tt.svg" class="evpic">
-					<div>Table tennis</div>
-				</div>
-				<div class="boxes">
-					<img src="bosm events/vb.svg" class="evpic">
-					<div>Volleyball</div>
-				</div>
+			<div class="main_text box_sizing scroll_d">
+				<p>To pick up your morale when your strength fails you. </p>
+				<p>For that much needed oomph in this unforgiving desert town. </p>
+
+				<p>Every festival needs a fitting mascot. Baxter, the Desert Eagle, aptly embodies the virtues of every sports person - Skill, Perseverance and Team Spirit. Transcending beyond individual sports, Baxter binds all players with the essence of BOSM. </p>
 
 			</div>
-			<div id="eoverlay"></div>
-			<div id="eexit"></div>    
-
-		</div>
-
-		<div id="yodh">
-			<div class="divtitle headingstyle" style="color:#81846A;">YODH</div>
-
-			<div id="yodh_panel">
-				<div class="text" id="yodh_content">
-					<p>More Than Just A Game..</p>
-					<p>&ldquo;Do you know what my favorite part of game is? The opportunity to play&ldquo;</p>
-					<p class="yodh_author">-Mike Singletary</p>
-					<p>How many kids in India actually get a chance to experience this?</p>
-					<p>Shockingly, in India , 43.48% of schools don&rsquo;t have recreational facilities for their kids. Rajasthan fares even worse, with&nbsp; 51.61% of the schools having no playgrounds. This BOSM, Nirmaan-Pilani presents a unique opportunity for all kids to showcase their sporting talent.</p>
-					<p>YODH 2014 is a two-day inter-school sports event. One of the most brilliant initiatives taken by BITS. It is an effort to give a chance to students to develop their interest in sports, an effort to create some opportunities for talented, deserving students.</p>
-					<p>This sports extravaganza, with numerous sporting events like athletics, chess, cricket, badminton and many more events,&nbsp; will witness participation from more than 200 students of classes 6<sup>th</sup> to 10<sup>th</sup>.&nbsp; 10+ schools from in and around Pilani will be participating in the event. These schools have only one thing in common: no playground facilities, no dedicated sports teachers, lack of knowledge about the importance of sports in the personality building of a student, yet a burning desire to overcome these difficulties and emerge as winners. Yodh is an enterprise from our side to provide a platform to let the school authorities as well as students discover their hidden potential, which has remained untapped all these years.</p><br>
-					<p>Date: </p>
-					<p>Time:</p>
-					<p>Venue: GymG, SAC and MedC grounds</p><br>
-					<p>For further details contact:</p>
-					<p></p>
-					<p></p>
-
-
-				</div>
+			<div id="mascot_img">
+				<img src="img/mascotbada.svg">
 			</div>
 		</div>
-		<div id="gallery">
-			<div class="divtitle headingstyle" style="color:#86907A;">GALLERY</div>
-			<div id="block-photos" class="main-block block-photos">
-				<div class="row">
-					<div class="col-lg-10 col-lg-offset-1">
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/1.jpg" rel="grp" data-glisse-big="img/main/1.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/2.jpg" rel="grp" data-glisse-big="img/main/2.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/3.jpg" rel="grp" data-glisse-big="img/main/3.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/4.jpg" rel="grp" data-glisse-big="img/main/4.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/5.jpg" rel="grp" data-glisse-big="img/main/5.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/6.jpg" rel="grp" data-glisse-big="img/main/6.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/7.jpg" rel="grp" data-glisse-big="img/main/7.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/8.jpg" rel="grp" data-glisse-big="img/main/8.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/9.jpg" rel="grp" data-glisse-big="img/main/9.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/10.jpg" rel="grp" data-glisse-big="img/main/10.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/11.jpg" rel="grp" data-glisse-big="img/main/11.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/12.jpg" rel="grp" data-glisse-big="img/main/12.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/13.jpg" rel="grp" data-glisse-big="img/main/13.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/14.jpg" rel="grp" data-glisse-big="img/main/14.jpg" / >
-						</div>
-						<div class="photo-wrapper">
-							<img class="photo-thumb" src="img/main/15.jpg" rel="grp" data-glisse-big="img/main/15.jpg" / >
-						</div>
+	</div>
+	<div id="events">
+		<div class="divtitle headingstyle" id="eventstitle" style="color:#86553F;">Events</div> 
+		<div id="badabox">
+			<div class="boxes" onclick="loadJSON(2)">
+				<img src="bosm events/ath.svg" class="evpic">
+				<div>Athletics</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(17)">
+				<img src="bosm events/bd.svg" class="evpic">
+				<div>Badminton</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(15)">
+				<img src="bosm events/bski.svg" class="evpic">
+				<div>Basketball</div>
+			</div>
+			
+			<div class="boxes" onclick="loadJSON(11)">
+				<img src="bosm events/crm.svg" class="evpic">
+				<div>Carrom</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(7)">
+				<img src="bosm events/che.svg" class="evpic">
+				<div>Chess</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(6)">
+				<img src="bosm events/crc.svg" class="evpic">
+				<div>Cricket</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(13)">
+				<img src="bosm events/sc.svg" class="evpic">
+				<div>Football</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(12)">
+				<img src="bosm events/hok.svg" class="evpic">
+				<div>Hockey</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(9)">
+				<img src="bosm events/mc.svg" class="evpic">
+				<div>Miscellaneous</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(16)">
+				<img src="bosm events/onl.svg" class="evpic" style="height:40%;top:30%;">
+				<div>Online</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(18)">
+				<img src="bosm events/pool.svg" class="evpic" style="height:40%;top:30%;">
+				<div>Pool</div>
+			</div>		 		
+			
+			<div class="boxes" onclick="loadJSON(10)">
+				<img src="bosm events/wei.svg" class="evpic">
+				<div>Powerlifting</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(5)">
+				<img src="bosm events/ten.svg" class="evpic">
+				<div>Squash</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(3)">
+				<img src="bosm events/sw.svg" class="evpic" style="height:40%;top:30%;">
+				<div>Swimming</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(14)">
+				<img src="bosm events/tw.svg" class="evpic">
+				<div>Taekwondo</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(8)">
+				<img src="bosm events/sq.svg" class="evpic">
+				<div>Tennis</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(1)">
+				<img src="bosm events/tt.svg" class="evpic">
+				<div>TableTennis</div>
+			</div>
+			<div class="boxes" onclick="loadJSON(4)">
+				<img src="bosm events/vb.svg" class="evpic">
+				<div>Volleyball</div>
+			</div>
+
+		</div>
+		<div id="eoverlay">
+			<div id="etitle"></div>
+			<div id="econtent" class=".escroll"></div>
+		</div>
+		<div id="eexit"></div>    
+
+	</div>
+
+	<div id="yodh">
+		<div class="divtitle headingstyle" id="yodhtitle" >Professional Show - The F16s</div>
+		<div id="yodh_panel">
+			<div class="text" id="yodh_content">
+				The F16s are an alternative/electro-rock band,known for their high energy eccentric live performances .They released their debut EP , Kaleidoscope in 2013 which went on to become a great success. The record acts as an effective acid test, laying the groundwork for an arresting live set. Having competed with some of the most promising upcoming bands	in the country	they won an all expenses paid trip to Rubber Tracks studios in New York where they recorded their Nobody’s	Gonna	Wait EP. They are set to etch their name in history by becoming the first band ever to perform live in BOSM.
+			</div>
+		</div>
+	</div>
+	<div id="gallery">
+		<div class="divtitle headingstyle" style="color:#86907A;">Gallery</div>
+		<div id="block-photos" class="main-block block-photos">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/1.jpg" rel="grp" data-glisse-big="img/main/1.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/2.jpg" rel="grp" data-glisse-big="img/main/2.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/3.jpg" rel="grp" data-glisse-big="img/main/3.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/4.jpg" rel="grp" data-glisse-big="img/main/4.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/5.jpg" rel="grp" data-glisse-big="img/main/5.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/6.jpg" rel="grp" data-glisse-big="img/main/6.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/7.jpg" rel="grp" data-glisse-big="img/main/7.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/8.jpg" rel="grp" data-glisse-big="img/main/8.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/9.jpg" rel="grp" data-glisse-big="img/main/9.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/10.jpg" rel="grp" data-glisse-big="img/main/10.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/11.jpg" rel="grp" data-glisse-big="img/main/11.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/12.jpg" rel="grp" data-glisse-big="img/main/12.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/13.jpg" rel="grp" data-glisse-big="img/main/13.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/14.jpg" rel="grp" data-glisse-big="img/main/14.jpg" / >
+					</div>
+					<div class="photo-wrapper">
+						<img class="photo-thumb" src="img/main/thumbs/15.jpg" rel="grp" data-glisse-big="img/main/15.jpg" / >
 					</div>
 				</div>
-
 			</div>
+			
+		</div>
 
+	</div>
+	
+	<div id="sponsors">	
+	<div class="divtitle headingstyle" style="color:#555;">SPONSORS</div>
+		<div class="main" style="    margin-top: -6em;">
+			<div id="mi-slider" class="mi-slider">
+				<ul>
+					<li><img src="img/spons/5.jpg" alt="Hungama"><h4>Title sponsor</h4></li>
+				</ul>
+
+				<ul>
+					<li><img src="img/spons/11.png" alt="Snickers"><h4>Hunger partner</h4></li>
+					
+				</ul>
+				<ul>
+					<li><img src="img/spons/9.png" alt="9XM"><h4>Music channel partner</h4></li>
+					<li><img src="img/spons/10.png" alt="SongDew"><h4>Music partner</h4></li>
+					<li><img src="img/spons/3.jpg" alt="104 FM"><h4>Radio partner</h4></li>
+					<li><img src="img/spons/2.jpg" alt="DU Beat"><h4>Other partner</h4></li>
+				</ul>
+				<ul>
+					<li><img src="img/spons/4.png" alt="HP"><h4 id="about_hp">Technology partner<br>HP is the #1 PC and Printer brand in India, creating new possibilities through technology.<br>Visit us on www.hpshopping.in.</h4></li>
+				</ul>
+				<ul>
+					<li><img src="img/spons/7.png" alt="College Fever"><h4>Other partner</h4></li>
+					<li><img src="img/spons/8.jpg" alt="Hook2Events"><h4>Other partner</h4></li>
+				</ul>
+				<ul>
+					<li><img src="img/spons/6.png" alt="Killer Jeans"><h4>Apparel partner</h4></li>
+					<li><img src="img/spons/1.gif" alt="Antec"><h4>Ignition partner</h4></li>
+				</ul>
+
+
+				<nav id="spons">
+					<div style="overflow:hidden;margin-top: -5px;">
+						<div id="tp"  style="width: 350%;position: relative;">
+							<div class="spons_head">PREMIUM</div>
+							<div class="spons_head">Food</div>
+							<div class="spons_head">Media</div>
+							<div class="spons_head">Online</div>
+							<div class="spons_head">Event</div>
+							<div class="spons_head">Partners</div>								
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div id="contacts">
+
+
+		<div id="reach" >
+			<!--<p><iframe src="http://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.371087,75.591516&amp;spn=0.030209,0.051413&amp;z=14&amp;iwloc=lyrftr:m,2286371793580034125,28.364082,75.586946&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="600" height="300" style="margin:0;width:100%;"></iframe><br></p>-->
+			<div id="map" style=" width: 100%; height: 400px;"></div>
+		</div>
+		<div class="divtitle headingstyle" id="contactus"style="color:#555;">Contacts</div>
+		<div id="contact_Outcont">
+			<div class="contact_grp">
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Sports Secretary</b><br></span>
+						Shambhavi Mehrotra<br>
+						+91-8290900449<br>
+						shambhavi@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Govinda Nathani<br>
+						+91-8503857881<br>
+						govinda@bits-bosm.org
+					</div>
+				</div>
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Amolak Singh<br>
+						+91-9772234241<br>
+						amolak@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>Joint Sports Secretary</b><br></span>
+						Akshat Dubey<br>
+						+91-9462181899<br>
+						akshat@bits-bosm.org
+					</div>
+				</div>
+			</div>
+			<div class="contact_grp">
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Correspondence, <br>Registration and Invites<br></b></span>
+						Vinit Bhat<br>
+						+91-7240105157<br>
+						pcr@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Scheduling and<br> Events</b><br></span>
+						Neil Dave<br>
+						+91-9772211599 <br>
+						controlz@bits-bosm.org
+					</div>
+				</div>
+				<div class="contact_grp">
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Reception and<br> Accommodation</b><br></span>
+						Basudev Choudhury<br>
+						+91-9929082070<br>
+						recnacc@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Sponsorship and<br> Marketing</b><br></span>
+						Vishesh Sharma<br>
+						+91-7728807829<br>
+						vishesh@bits-bosm.org
+					</div>
+					<div class="contact_grp inner_contacts_cont">
+						<span><b>For Website Related Queries</b><br></span>
+						webmaster@bits-bosm.org
+					</div>
+				</div>
+			</div>
 		</div>
 
 
-		<div id="sponsors">	
-			<div class="divtitle headingstyle" style="color:#555;">LAST YEAR'S SPONSORS</div>
-			<div class="main" style="    margin-top: -6em;">
-				<div id="mi-slider" class="mi-slider">
-					<ul>
-						<li><img src="img/spons/1.jpg" alt="Hero"><h4>GOLD</h4></li>
-						<li><img src="img/spons/2.png" alt="Bharat Petroleum"><h4>SILVER</h4></li>
-					</ul>
-					
-					<ul>
-						<li><img src="img/spons/3.png" alt="Sports Keeda"><h4>INSPIRE</h4></li>
-						<li><img src="img/spons/4.png" alt="Euquotism"><h4>MERCHANDISE</h4></li>
-						<li><img src="img/spons/5.jpg" alt="THE WEEK"><h4>PRINT MEDIA</h4></li>
-						<li><img src="img/spons/6.jpg" alt="Buddh International"><h4>SPEED</h4></li>
-					</ul>
-					<ul>
-						<li><img src="img/spons/7.png" alt="EBAY"><h4>ONLINE SHOPPING</h4></li>
-						<li><img src="img/spons/8.jpg" alt="Brain Buxa"><h4>ONLINE KNOWLEDGE</h4></li>
-					</ul>
-					<ul>
-						<li><img src="img/spons/9.png" alt="Radio Mirchi"><h4>RADIO</h4></li>
-						<li><img src="img/spons/10.png" alt="TechZone"><h4>SMS</h4></li>
-						<li><img src="img/spons/11.jpg" alt="VODAFONE"><h4>NETWORK</h4></li>
-					</ul>
-					<ul>
-						<li><img src="img/spons/12.jpg" alt="Spalding"><h4>SPORTS-WEAR</h4></li>
-						<li><img src="img/spons/13.jpg" alt="Adidas"><h4>SPORTS-WEAR</h4></li>
-						<li><img src="img/spons/14.jpg" alt="Crocs"><h4>COMFORT</h4></li>
-						<li><img src="img/spons/15.png" alt="Calvin Klein"><h4>TIMEKEEPER</h4></li>
-					</ul>
-					<ul>
-						<li><img src="img/spons/16.png" alt="Mozilla"><h4>MARATHON</h4></li>
-						<li><img src="img/spons/17.jpg" alt="PEPSI"><h4>DRINKS</h4></li>
-					</ul>
-					
-					
-					<nav id="spons">
-						<div style="overflow:hidden;margin-top: -5px;">
-							<div id="tp"  style="width: 350%;position: relative;">
-								<div class="spons_head">PREMIUM</div>
-								<div class="spons_head">PARTNERS</div>
-								<div class="spons_head">ONLINE</div>
-								<div class="spons_head">MEDIA</div>
-								<div class="spons_head">SPORTS</div>
-								<div class="spons_head">FOOD & MARATHON</div>								
-							</div>
-						</div>
-					</nav>
+		<div id="socialcontainer">
+			<!-- <a href="https://twitter.com/BOSM_BITSPilani" target="_blank">
+				<div class = "socialicon" id="tw">
+					<img src="img/twitter.png">
 				</div>
-			</div>
+			</a>
+			
+			<a href="http://en.wikipedia.org/wiki/BOSM_(festival)" target="_blank">
+				<div class = "socialicon" id="wiki">
+					<img src="img/wiki.png">
+				</div>
+			</a> -->
+			<a href="http://hpconline-bits.weebly.com/" target="_blank">
+				<div class = "socialicon" id="hpc">
+					<img src="img/hpc.svg"  style="height:40px;width:40px;border-radius:20px;" />
+				</div>
+			</a>
+			<a href="https://bep2015.wordpress.com/" target="_blank">
+				<div class = "socialicon" id="epc">
+					<img src="img/epc.svg" style="height:40px;width:40px;border-radius:20px;" />
+				</div>
+			</a>
+			<a href="http://www.bits-bosm.org/2014" target="_blank">
+				<div class = "socialicon" id="bs14">
+					<img src="img/bosm2014.png" style="height:40px;width:40px;">
+				</div>
+			</a>
+			<a href="http://www.youtube.com/user/bitsbosm" target="_blank">
+				<div class = "socialicon" id="yt">
+					<img src="img/youtube.png">
+				</div>
+			</a>
+			<a href="http://www.facebook.com/bosmbitspilani" target="_blank">
+				<div class = "socialicon" id="fb">
+					<img src="img/facebook.png">
+				</div>
+			</a>
 		</div>
 
-		<div id="contacts">
+	</div>
 
 
-			<div id="reach" >
-				<!--<p><iframe src="http://maps.google.co.in/maps?hl=en&amp;ie=UTF8&amp;t=m&amp;ll=28.371087,75.591516&amp;spn=0.030209,0.051413&amp;z=14&amp;iwloc=lyrftr:m,2286371793580034125,28.364082,75.586946&amp;output=embed" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" width="600" height="300" style="margin:0;width:100%;"></iframe><br></p>-->
-				<div id="map" style=" width: 100%; height: 400px;"></div>
-			</div>
-			<div id="contacts">
-				<div class="divtitle headingstyle" id="contactus"style="color:#555;">CONTACTS</div>
-				<div id="contact_Outcont">
-					<div class="contact_grp">
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Sports Secretary</b><br></span>
-								Shambhavi Mehrotra<br>
-								+91-8290900449<br>
-								shambhavi@bits-bosm.org
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Joint Sports Secretary</b><br></span>
-								Govinda Nathani<br>
-								+91-8503857881<br>
-								govinda@bits-bosm.org
-							</div>
-						</div>
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Joint Sports Secretary</b><br></span>
-								Amolak Singh<br>
-								+91-9772234241<br>
-								amolak@bits-bosm.org
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>Joint Sports Secretary</b><br></span>
-								Akshat Dubey<br>
-								+91-9462181899<br>
-								akshat@bits-bosm.org
-							</div>
-						</div>
-					</div>
-					<div class="contact_grp">
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>For Correspondence, <br>Registration and Invites<br></b></span>
-								Vinit Bhat<br>
-								+91-9928086307<br>
-								pcr@bits-bosm.org
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>For Scheduling and Events</b><br></span>
-								Neil Dave<br>
-								+91-9772211599 <br>
-								controlz@bits-bosm.org
-							</div>
-						</div>
-						<div class="contact_grp">
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>For Reception and<br> Accommodation</b><br></span>
-								Basudev Choudhury<br>
-								+91-9929082070<br>
-								recnacc@bits-bosm.org
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>For Sponsorship and<br> Marketing</b><br></span>
-								Vishesh Sharma<br>
-								+91-7728807829<br>
-								vishesh@bits-bosm.org
-							</div>
-							<div class="contact_grp inner_contacts_cont">
-								<span><b>For Website Related Queries</b><br></span>
-								webmaster@bits-bosm.org
-							</div>
-						</div>
-					</div>
-				</div>
+	<script type="text/javascript">
+		$(".boxes").click(function()
+		{
+			$("#eoverlay").fadeIn(200);
+			$("#eexit").fadeIn(200);
+			$('html, body').animate({scrollTop:$('#events').offset().top},200);
 
+		});    
 
-				<div id="socialcontainer">
-					<a href="http://www.youtube.com/user/bitsbosm" target="_blank">
-						<div class = "socialicon" id="yt">
-							<img src="img/youtube.png">
-						</div>
-					</a>
-					<a href="https://twitter.com/BOSM_BITSPilani" target="_blank">
-						<div class = "socialicon" id="tw">
-							<img src="img/twitter.png">
-						</div>
-					</a>
-					<a href="http://www.facebook.com/bosmbitspilani" target="_blank">
-						<div class = "socialicon" id="fb">
-							<img src="img/facebook.png">
-						</div>
-					</a>
-					<a href="http://en.wikipedia.org/wiki/BOSM_(festival)" target="_blank">
-						<div class = "socialicon" id="wiki">
-							<img src="img/wiki.png">
-						</div>
-					</a>
-					<a href="http://hpconline-bits.weebly.com/" target="_blank">
-						<div class = "socialicon" id="hpc">
-							<img src="img/hpc.svg"  style="height:40px;width:40px;border-radius:20px;" />
-						</div>
-					</a>
-					<a href="http://bits-bosm.org/blogs/english/" target="_blank">
-						<div class = "socialicon" id="epc">
-							<img src="img/epc.svg" style="height:40px;width:40px;border-radius:20px;" />
-						</div>
-					</a>
-				</div>
+		var bh = $(".boxes").height();
+		$(".boxes").find("div").css({"line-height" : bh + "px"});
 
-			</div>
-
-
-			<script type="text/javascript">
-				$(".boxes").click(function()
-				{
-					$("#eoverlay").fadeIn(500);
-					$("#eexit").fadeIn(500);
-				});    
-
-				$(".boxes").hover(function (e){  
-					var panel = $(this).find('div');
-					var el_pos = $(this).offset();
-					var edge = closestEdge(e.pageX - el_pos.left, e.pageY - el_pos.top, $(".boxes").height(),$(".boxes").width());
-					switch (edge) {
-						case 0:
-						panel.attr('class','slideitb');
-						break;
-						case 1:
-						panel.attr('class','slideirl');
-						break;
-						case 2:
-						panel.attr('class','slideibt');
-						break;
-						case 3:
-						panel.attr('class','slideilr');
-						break;
-					}
-				}, function(e){ 
-					var panel = $(this).find('div');
-					var el_pos = $(this).offset();
-					var edge = closestEdge(e.pageX - el_pos.left, e.pageY - el_pos.top, $(".boxes").height(),$(".boxes").width());
-					switch (edge) {
-						case 0:
-						panel.attr('class','slidefbt');
-						break;
-						case 1:
-						panel.attr('class','slideflr');
-						break;
-						case 2:
-						panel.attr('class','slideftb');
-						break;
-						case 3:
-						panel.attr('class','slidefrl');
-						break;
-					}
-				});
-				function closestEdge(x,y,w,h) {
-					var tD = distMetric(x,y,w/2,0);
-					var bD = distMetric(x,y,w/2,h);
-					var lD = distMetric(x,y,0,h/2);
-					var rD = distMetric(x,y,w,h/2);
-
-					var min = Math.min(tD,bD,lD,rD);
-					switch (min) {
-						case tD:
-						return 0;
-						case rD:
-						return 1;
-						case bD:
-						return 2;
-						case lD:
-						return 3;
-					}
-				};
-				function distMetric(x,y,x2,y2) {
-					var xDiff = x - x2;
-					var yDiff = y - y2;
-					return (xDiff * xDiff) + (yDiff * yDiff);
-				}
+		$(".boxes").hover(function (e){  
+			var panel = $(this).find('div');
+			var el_pos = $(this).offset();
+			var edge = closestEdge(e.pageX - el_pos.left, e.pageY - el_pos.top, $(".boxes").height(),$(".boxes").width());
+			switch (edge) {
+				case 0:
+				panel.attr('class','slideitb');
+				break;
+				case 1:
+				panel.attr('class','slideirl');
+				break;
+				case 2:
+				panel.attr('class','slideibt');
+				break;
+				case 3:
+				panel.attr('class','slideilr');
+				break;
+			}
+		}, function(e){ 
+			var panel = $(this).find('div');
+			var el_pos = $(this).offset();
+			var edge = closestEdge(e.pageX - el_pos.left, e.pageY - el_pos.top, $(".boxes").height(),$(".boxes").width());
+			switch (edge) {
+				case 0:
+				panel.attr('class','slidefbt');
+				break;
+				case 1:
+				panel.attr('class','slideflr');
+				break;
+				case 2:
+				panel.attr('class','slideftb');
+				break;
+				case 3:
+				panel.attr('class','slidefrl');
+				break;
+			}
+		});
+		function closestEdge(x,y,w,h) {
+			var tD = distMetric(x,y,w/2,0);
+			var bD = distMetric(x,y,w/2,h);
+			var lD = distMetric(x,y,0,h/2);
+			var rD = distMetric(x,y,w,h/2);
+			
+			var min = Math.min(tD,bD,lD,rD);
+			switch (min) {
+				case tD:
+				return 0;
+				case rD:
+				return 1;
+				case bD:
+				return 2;
+				case lD:
+				return 3;
+			}
+		};
+		function distMetric(x,y,x2,y2) {
+			var xDiff = x - x2;
+			var yDiff = y - y2;
+			return (xDiff * xDiff) + (yDiff * yDiff);
+		}
 
 
 
 
-				$("#eexit").click(function(){
-					$("#eexit").fadeOut(500);
-					$("#eoverlay").fadeOut(500,function()
-					{
-						$("#badabox").fadeIn(500);
-						$("#eventstitle").fadeIn(500);
+		$("#eexit").click(function(){
+			$("#eexit").fadeOut(200);
+			document.getElementById("etitle").innerHTML =  "";
+			document.getElementById("econtent").innerHTML = "";
+			$("#eoverlay").fadeOut(200,function()
+			{
+				$("#badabox").fadeIn(200);
+				$("#eventstitle").fadeIn(200);
 
-					});      
+			});      
+			
+		}
+		);
 
-				}
-				);
 
-				$('.boxes').click(function(){
-					loadXMLDoc();
-				});
-
-				function loadXMLDoc()
-				{
-					var xmlhttp;
-					if (window.XMLHttpRequest)
-{// code for IE7+, Firefox, Chrome, Opera, Safari
-	xmlhttp=new XMLHttpRequest();
+		function loadJSON(k)
+		{  var data_file = "http://bits-bosm.org/2015/event/" + k + "/";
+		var http_request = new XMLHttpRequest();
+		try{
+      // Opera 8.0+, Firefox, Chrome, Safari
+      http_request = new XMLHttpRequest();
+  }catch (e){
+      // Internet Explorer Browsers
+      try{
+      	http_request = new ActiveXObject("http://bits-bosm.org/2015/event/" + k +"/");
+      }catch (e) {
+      	try{
+      		http_request = new ActiveXObject("http://bits-bosm.org/2015/event/" + k +"/");
+      	}catch (e){
+            // Something went wrong
+            alert("Your browser broke!");
+            return false;
+        }
+    }
 }
-else
-{// code for IE6, IE5
-	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-xmlhttp.onreadystatechange=function()
-{
-	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+http_request.onreadystatechange  = function(){
+	if (http_request.readyState == 4  )
 	{
-		document.getElementById("eoverlay").innerHTML=xmlhttp.responseText;
-	}
+        // Javascript function JSON.parse to parse JSON data
+        var jsonObj = JSON.parse(http_request.responseText);
+
+        // jsonObj variable now contains the data structure and can
+        // be accessed as jsonObj.name and jsonObj.country.
+        document.getElementById("etitle").innerHTML =  jsonObj.name;
+        document.getElementById("econtent").innerHTML = jsonObj.content;
+    }
 }
-xmlhttp.open("GET","http://bits-bosm.org/2015/event/1/",true);
-xmlhttp.send();
-
-$("#badabox").fadeOut(500);
-$("#eventstitle").fadeOut(500);
-};
-
+http_request.open("GET", data_file, true);
+http_request.send();
+$("#badabox").fadeOut(400);
+$("#eventstitle").fadeOut(400);
+}
 </script>
 
 
@@ -647,7 +663,16 @@ $("#eventstitle").fadeOut(500);
 		$('#tp').css('left',(cont_left + diff_left)+'px');
 		$('.spons_head:nth-child('+(spon_len+1+index)+')').trigger( "click" );
 	});
-
 </script>	
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-9546354-1', 'auto');
+	ga('send', 'pageview');
+</script>
 </body>
 </html>

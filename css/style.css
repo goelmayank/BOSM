@@ -69,7 +69,11 @@
 	padding: 20px 10px 0;
 	color: rgb(66, 58, 58) !important;
 }
-
+#about_hp{
+	width: 442px;
+	left: -104px;
+	bottom: 22px;
+}
 
 
 .mi-slider nav {

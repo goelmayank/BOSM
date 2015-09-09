@@ -1,7 +1,24 @@
 //ball to fro
 function balltf()
 {
-	$('#cn-button').animate({'margin-top':'-2.7em'},200).animate({'margin-top':'-2.25em'},200);
+	//$('#cn-button').animate({'margin-top':'-2.7em'},200).animate({'margin-top':'-2.25em'},200);
+}
+
+
+
+
+function smd()
+{
+	if($(window).scrollTop() > 100)
+	{
+		$("#menutxt").css("display","none");
+		$('#pointer').removeClass("flipv");
+	}
+	else
+	{
+		$("#menutxt").css("display","block");
+		$('#pointer').addClass("flipv");
+	}
 }
 
  
@@ -25,6 +42,8 @@ function balltf()
 	  	$("#overlay").fadeIn(200);
 	  	$('#pointer').css("display","none");
 	  	$('div.component').animate({"top":"70vh"},200);
+	  	$("#menutxt").css("display","none");
+	  	$('#pointer').removeClass("flipv");
 	  	setTimeout(function() {
 	    	classie.add(wrapper, 'opened-nav');
 	  	}, 100);
@@ -117,6 +136,9 @@ $(function () {
 //gallery resize
 $(window).resize(function(){
 	galres();
+	var bh = $(".boxes").height();
+ 	$(".boxes").find("div").css({"line-height" : bh + "px"});
+
 });
 
 // notifications
@@ -127,4 +149,17 @@ $(function() {
       $(".notifications").fadeToggle(300);
     }
   });
+});
+
+$('#tpt').click(function()
+{
+	$('html, body').animate({scrollTop:$('#landing').offset().top},500);
+});
+
+$('#classylogo').mouseenter(function(){
+    $('#classylogocol').fadeIn(300); 
+});
+
+$('#classylogocol').mouseleave(function(){
+    $('#classylogocol').fadeOut(300);
 });

@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
-<ellipse fill="#FFFFFF" cx="25.169" cy="14.43" rx="7.217" ry="7.285"/>
-<ellipse fill="#FFFFFF" cx="41.148" cy="17.025" rx="5.67" ry="5.724"/>
-<ellipse fill="#FFFFFF" cx="9.362" cy="17.373" rx="5.498" ry="5.551"/>
-<path fill="#FFFFFF" d="M10.909,38.361L0.083,38.187c0,0,0.06-7.686,3.265-10.928c0,0,2.577-2.949,5.841-2.774
-	c3.266,0.174,5.842,2.43,5.842,2.43S11.767,31.248,10.909,38.361z"/>
-<path fill="#FFFFFF" d="M39.175,38.528L50,38.354c0,0-0.06-7.686-3.265-10.928c0,0-2.577-2.949-5.841-2.774
-	c-3.266,0.174-5.843,2.43-5.843,2.43S38.316,31.415,39.175,38.528z"/>
-<path fill="#FFFFFF" d="M12.798,42.35l24.571,0.175c0,0-0.345-8.501-1.375-10.235c-0.494-0.829-1.309-2.567-2.577-3.989
-	c-1.383-1.549-3.233-2.761-3.952-3.122c-1.374-0.693-4.124-0.868-4.124-0.868s-4.467,0.175-7.388,2.257
-	c-1.889,1.345-4.124,5.376-4.639,8.152C12.798,37.493,12.798,42.35,12.798,42.35z"/>
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 3233 3230"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:#FEFEFE}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M1156 1391c157,-37 293,-137 490,-84 175,46 219,191 178,393 -99,491 -340,815 152,695 -14,99 -12,97 -47,117 -68,40 -272,97 -384,91 -476,-28 -210,-579 -147,-844 17,-75 53,-215 -9,-264 -71,-55 -183,-3 -256,7 10,-34 14,-65 23,-111zm516 -751c304,-112 476,325 174,428 -309,105 -477,-317 -174,-428zm-248 -626c-324,47 -619,166 -851,365l-200 202c-225,281 -427,737 -360,1233 52,379 208,689 461,943 618,618 1640,643 2283,0 304,-304 537,-800 461,-1340 -55,-397 -266,-803 -568,-1044 -277,-222 -735,-430 -1226,-359z"/>
+ </g>
 </svg>
